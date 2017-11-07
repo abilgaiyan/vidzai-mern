@@ -1,0 +1,1 @@
+start mongod --dbpath D:\ajayl\react-node\data
