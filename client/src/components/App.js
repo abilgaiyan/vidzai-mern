@@ -3,11 +3,12 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import Header from './Header';
+import Landing from './Landing';
+import Dashboard from './Dashboard';
+import SurveyNew from './surveys/SurveyNew';
 
 
-const DashBoard = () => <h2>DashBoard</h2>;
-const SurveyNew = () => <h2>Survey New</h2>;
-const Landing = () => <h2>Landing</h2> ;
+
 
 class  App extends Component {
   componentDidMount(){
@@ -21,8 +22,8 @@ class  App extends Component {
         <div>
             <Header />
            <Route exact={true} path="/" component={Landing} /> 
-           <Route exact={true} path="/surveys" components={DashBoard} />
-           <Route path="/surveys/new" components={SurveyNew} />
+           <Route exact={true} path="/surveys" component={Dashboard} />
+           <Route path="/surveys/new" component={SurveyNew} />
         </div>
         </BrowserRouter>  
       </div>
