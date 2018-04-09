@@ -2,7 +2,7 @@
 web apps with NodeJS, React, Redux, Express, and MongoDB. 
 
 
-Installtion instruction
+Installation instructions
 
 1) Create a local folder  vidzai-mern
 
