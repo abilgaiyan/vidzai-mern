@@ -5,9 +5,16 @@ import {Link} from 'react-router-dom';
 
 class Header extends  Component {
     renderContent(){
+      console.log(this.props.auth);
       switch (this.props.auth) {
         case null:
-          return;
+        return[
+        <li key={4}><a href="#">You</a></li>,
+        <li key={5}><a href="#">Customer Stories</a></li>,
+        <li key={6}><a href="#">Agencies</a></li>,
+        <li key={7}><a href="#">Work for Us!</a></li>,
+        <li key={8}><a href="#">About Us</a></li>,
+        <li key={9}><a href="#">Contact Us</a></li>]
         case false:
           return <li><a href="/auth/google">Login With Google</a></li>   
         default:
@@ -16,7 +23,8 @@ class Header extends  Component {
           <li key={3} style={{margin: '0 10px'}}>
              Credits: {this.props.auth.credits}
           </li>, 
-          <li key={2}><a href="/api/logout">Logout</a></li>
+          <li key={2}><a href="/api/logout">Logout</a></li>,
+         
          ]
       }
     } 
