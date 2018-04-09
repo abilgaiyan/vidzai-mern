@@ -1,1 +1,4 @@
-start mongod --dbpath D:\ajayl\react-node\data
+if not exists "D:\ajayl\vidzai\mean-dev\data" mkdir "D:\ajayl\vidzai\mean-dev\data"
+
+
+start mongod --dbpath D:\ajayl\vidzai\mean-dev\data
