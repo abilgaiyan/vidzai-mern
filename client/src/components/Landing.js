@@ -6,7 +6,7 @@ const Landing = () => {
       <h1>
         Vidzai!
       </h1>
-      Collect feedback form your users
+      Collect feedback from your users
     </div>
   );
 };
