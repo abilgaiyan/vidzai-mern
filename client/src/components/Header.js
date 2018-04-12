@@ -13,8 +13,9 @@ class Header extends  Component {
         <li key={5}><a href="#">Customer Stories</a></li>,
         <li key={6}><a href="#">Agencies</a></li>,
         <li key={7}><a href="#">Work for Us!</a></li>,
-        <li key={8}><a href="#">About Us</a></li>,
-        <li key={9}><a href="#">Contact Us</a></li>]
+        <li key={8}><a href="/aboutus">About Us</a></li>,
+        <li key={9}><a href="/contactus">Contact Us</a></li>,
+        <li><a href="/auth/google">Login With Google</a></li>]
         case false:
           return <li><a href="/auth/google">Login With Google</a></li>   
         default:

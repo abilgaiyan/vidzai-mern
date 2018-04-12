@@ -6,6 +6,8 @@ import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import SurveyNew from './surveys/SurveyNew';
+import Aboutus from './Aboutus';
+import Contactus from './Contactus';
 
 
 
@@ -24,6 +26,8 @@ class  App extends Component {
            <Route exact={true} path="/" component={Landing} /> 
            <Route exact={true} path="/surveys" component={Dashboard} />
            <Route path="/surveys/new" component={SurveyNew} />
+           <Route path="/aboutus" component={Aboutus} />
+           <Route path="/contactus" component={Contactus} />
         </div>
         </BrowserRouter>  
       </div>
