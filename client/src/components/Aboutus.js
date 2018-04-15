@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Landing = () => {
+const Aboutus = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>
-        Vidzai!
+        About Vidzai!
       </h1>
-      Collect feedback from your users
+        AboutUs Page
     </div>
   );
 };
 
-export default Landing;
+export default Aboutus;

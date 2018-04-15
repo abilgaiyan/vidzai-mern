@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Landing = () => {
+const Contactus = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>
-        Vidzai!
+      Contact Vidzai!
       </h1>
-      Collect feedback from your users
+      Contactus Page
     </div>
   );
 };
 
-export default Landing;
+export default Contactus;
