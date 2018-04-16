@@ -17,11 +17,11 @@ class ContactusList extends Component{
             <div key={contact._id} class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">{contact.name}</span>
-              <p>{survey.message}</p>
+              <p>{contact.message}</p>
             </div>
             <div class="card-action">
-              <p>Mobile: {survey.mobile}</p>
-              <p>Email: {survey.email}</p>
+              <p>Mobile: {contact.mobile}</p>
+              <p>Email: {contact.email}</p>
               <p>Contactus Date: {new Date(contact.updateDate).toLocaleDateString()}</p>
             </div>
           </div>

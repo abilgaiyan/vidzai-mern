@@ -40,6 +40,7 @@ const ContactusFormReview = ({ onCancel, formValues, submitContactus, history })
 };
 
 function mapStateToProps(state) {
+  //console.log(state.form.contactusForm.values);
   return { formValues: state.form.contactusForm.values };
 }
 

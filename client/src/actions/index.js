@@ -28,8 +28,8 @@ export const fetchSurveys = () => async dispatch => {
 
 export const contactusSurvey = (values, history) => async dispatch => {
   const res = await axios.post('/api/contactus', values);
-
-  history.push('/contactus');
+   console.log(res);
+  //history.push('/contactus');
   dispatch({ type: FETCH_CONTACTUS, payload: res.data });
 };
 

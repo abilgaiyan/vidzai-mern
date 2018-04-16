@@ -8,6 +8,6 @@ export default combineReducers({
   auth : authReducer,
   form: reduxForm,
   surveys: surveyReducer,
-  form: reduxForm,
+  contactusForm: reduxForm,
   contactus: contactusReducer
 });
