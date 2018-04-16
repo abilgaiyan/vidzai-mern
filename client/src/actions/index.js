@@ -26,10 +26,10 @@ export const fetchSurveys = () => async dispatch => {
   dispatch({ type: FETCH_SURVEYS, payload: res.data });
 };
 
-export const contactusSurvey = (values, history) => async dispatch => {
+export const submitContactus = (values, history) => async dispatch => {
   const res = await axios.post('/api/contactus', values);
-   console.log(res);
-  //history.push('/contactus');
+  // console.log(res);
+  history.push('/contactus');
   dispatch({ type: FETCH_CONTACTUS, payload: res.data });
 };
 

@@ -2,14 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
-const passport = require('passport');
+//const passport = require('passport');
 const cookieSession = require('cookie-session');
 require('./models/User');
 require('./models/Survey');
 require('./models/Contactus');
-require('./services/passport');
-
-mongoose.connect(keys.mongoURI);
+//require('./services/passport');
+//console.log(keys.mongodbURL)
+mongoose.connect(keys.mongodbURL);
 
 const app = express();
 
@@ -21,8 +21,8 @@ app.use(
     })
 );
 
-app.use(passport.initialize());
-app.use(passport.session());
+//app.use(passport.initialize());
+//app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);

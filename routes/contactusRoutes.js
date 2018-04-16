@@ -13,7 +13,15 @@ module.exports = app =>{
     });
 
 
+    app.get('/api/videourl/:videourl', async (req, res) =>{
+        //const contactus = await Contactus.find({_user: req.user.id});
+        var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+
+       // res.send(fullUrl);  
+     });
+
     app.post('/api/contactus',  async (req,res) =>{
+       // console.log(req.body);
       const {name, email, mobile, message} = req.body;
       const contactus = new Contactus({
           name,
@@ -26,11 +34,12 @@ module.exports = app =>{
       });
     // Place to send mailer
 
-   // const mailer = new Mailer(survey, surveyTemplate(survey) );
+   // const mailer = new Mailer(contactus, contactusTemplate(survey) );
    // await mailer.send();
     await contactus.save();
     //req.user.credits -=1;
     //const user = await req.user.save();
+    res.end();
     
     });
 
