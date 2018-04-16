@@ -11,7 +11,7 @@ function endsWith(str, suffix) {
 
 // Stream Video with support for different formats and device request for chunks
 exports.streamMovie = function(req, res) {
-
+    //console.log(req);
     // Get the filename
     var movieFileName = "";
 
@@ -19,7 +19,7 @@ exports.streamMovie = function(req, res) {
         movieFileName = req.params.videourl;
     }
 
-    var streamPath = path.resolve(__dirname, "/videourl/" + movieFileName);
+    var streamPath = path.resolve(__dirname, "../videourl/" + movieFileName);
     //Calculate the size of the file
     var stat = fs.statSync(streamPath);
     var total = stat.size;

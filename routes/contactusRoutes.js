@@ -14,12 +14,12 @@ module.exports = app =>{
     });
 
     
-    app.get('/api/videourl/:videourl', async (req, res) =>{
-                    var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
-                    // res.send(fullUrl);  
-    });
+    // app.get('/api/videourl/:videourl', async (req, res) =>{
+    //                 var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+    //                 // res.send(fullUrl);  
+    // });
         
-    app.get('/api/videourl/:videourl',  video_streamer.streamMovie()); 
+    app.get('/api/videourl/:videourl',  video_streamer.streamMovie); 
 
     app.post('/api/contactus',  async (req,res) =>{
        // console.log(req.body);

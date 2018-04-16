@@ -15,8 +15,8 @@ const Landing = () => {
        <div className='player-wrapper'>
 
        <ReactPlayer 
-         url='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' 
-         //url='http://localhost:3000/api/videourl/Thank-You-Clean_v1.mp4' 
+         //url='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' 
+         url='http://localhost:3000/api/videourl/Thank-You-Clean_v1.mp4' 
        playing />
       
     {/* <Player
