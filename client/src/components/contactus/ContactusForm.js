@@ -13,7 +13,7 @@ class ContactusForm extends Component {
       return (
         <Field
           key={name}
-          component={SurveyField}
+          component={ContactusField}
           type="text"
           label={label}
           name={name}
@@ -58,4 +58,4 @@ export default reduxForm({
   validate,
   form: 'contactusForm',
   destroyOnUnmount: false
-})(SurveyForm);
+})(ContactusForm);

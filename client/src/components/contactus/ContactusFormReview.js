@@ -1,4 +1,4 @@
-// SurveyFormReview shows users their form inputs for review
+// ContactusFormReview shows users their form inputs for review
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
@@ -6,7 +6,7 @@ import formFields from './formFields';
 import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions';
 
-const ContactusFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
+const ContactusFormReview = ({ onCancel, formValues, submitContactus, history }) => {
   const reviewFields = _.map(formFields, ({ name, label }) => {
     return (
       <div key={name}>
@@ -29,7 +29,7 @@ const ContactusFormReview = ({ onCancel, formValues, submitSurvey, history }) =>
         Back
       </button>
       <button
-        onClick={() => contactusSurvey(formValues, history)}
+        onClick={() => submitContactus(formValues, history)}
         className="green btn-flat right white-text"
       >
         Send Contactus

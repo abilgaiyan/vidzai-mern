@@ -8,6 +8,7 @@ import Dashboard from './Dashboard';
 import SurveyNew from './surveys/SurveyNew';
 import Aboutus from './Aboutus';
 import Contactus from './Contactus';
+import ContactusNew from './contactus/ContactusNew';
 
 
 
@@ -28,6 +29,7 @@ class  App extends Component {
            <Route path="/surveys/new" component={SurveyNew} />
            <Route path="/aboutus" component={Aboutus} />
            <Route path="/contactus" component={Contactus} />
+           <Route path="/contactus/new" component={ContactusNew} />
         </div>
         </BrowserRouter>  
       </div>

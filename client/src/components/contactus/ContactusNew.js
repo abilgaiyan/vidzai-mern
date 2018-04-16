@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
-import SurveyForm from './SurveyForm';
-import SurveyFormReview from './SurveyFormReview';
+import ContactusForm from './ContactusForm';
+import ContactusFormReview from './ContactusFormReview';
 
 class ContactusNew extends Component {
 
