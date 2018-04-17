@@ -36,7 +36,7 @@ require('./routes/contactusRoutes')(app);
 if (process.env.NODE_ENV ==='production'){
   // Express will serve up production assets
   // like our main.js or main.css file!
-  app.use('/static',express.static(path.join(__dirname,'/client/build')));
+  app.use('/static',express.static('/client/build'));
 //   app.use(express.static('/client/build/css'));
 //   app.use(express.static('/client/build/fonts'));
 //   app.use(express.static('/client/build/img'));
