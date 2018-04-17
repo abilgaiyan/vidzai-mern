@@ -2,40 +2,49 @@ import React, { Component } from 'react';
 //import "node_modules/video-react/dist/video-react.css"; // import css
 //import '../../node_modules/video-react/dist/video-react.css';
 //import { Player } from 'video-react';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 
 class  Landing extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {counter: 0};
+  }
+
    videolist = [
     {id: 1, name: 'clara1', videourl: 'http://localhost:3000/api/videourl/Thank-You-Clean_v1.mp4'},
-    {id: 2, name: 'clara2', videourl: 'http://localhost:3000/api/videourl/Thank-You-Clean_v1.mp4'},
-    {id: 3, name: 'clara3', videourl: 'http://localhost:3000/api/videourl/Thank-You-Clean_v1.mp4'},
+    {id: 2, name: 'clara2', videourl: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4'},
+    {id: 3, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'},
   ]
   
   
 
   renderNextVideo =(vi) => {
-    console.log(vi);
-    this.renderVideo(vi);
+    //console.log(vi);
+    this.setState({counter: vi});
+    this.renderVideo(this.state.counter);
   }
   renderVideo = (vi) =>{
-     if (vi >= this.videolist.length){
+    console.log(this.state.counter);
+    console.log(this.videolist.length);
+     if (this.state.counter > this.videolist.length ){
        return;
      }
+
     return(
         <div>
-          <p>Video for: {this.videolist[vi].name}</p>
+          <p>Video for: {this.videolist[this.state.counter].name}</p>
            <ReactPlayer 
          //url='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' 
-         url= {this.videolist[vi].videourl}
-         onEnded={() => this.renderVideo(vi + 1)}
+         url= {this.videolist[this.state.counter].videourl}
+         onEnded={() => this.renderNextVideo(this.state.counter + 1)}
        playing />
       
     {/* <Player
       playsInline
       poster="/assets/poster.png" 
-      //src="http://localhost:3000/api/videourl/Thank-You-Clean_v1.mp4"
-       src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+      src={this.videolist[this.state.counter].videourl}
+      // src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
     /> */}
 
     {/* <video id="my_video_1" class="video-js vjs-default-skin" controls  

@@ -9,6 +9,7 @@ import SurveyNew from './surveys/SurveyNew';
 import Aboutus from './Aboutus';
 import Contactus from './Contactus';
 import ContactusNew from './contactus/ContactusNew';
+import CustomerStories from './CustomerStories';
 
 
 
@@ -30,6 +31,7 @@ class  App extends Component {
            <Route path="/aboutus" component={Aboutus} />
            <Route path="/contactus" component={Contactus} />
            <Route path="/contactus/new" component={ContactusNew} />
+           <Route path="/customerstories" component={CustomerStories} />
         </div>
         </BrowserRouter>  
       </div>

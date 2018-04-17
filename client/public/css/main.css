@@ -987,7 +987,7 @@ p {
 
 /*===========HEADER==============*/
 
-header {
+.header {
     position: fixed;
     left: 0px;
     top: 0px;
@@ -2552,7 +2552,7 @@ body.fix {
         padding-top: 60px;
     }
 
-    header {
+    .header {
         height: 60px;
     }
 
@@ -5966,7 +5966,7 @@ strong, b {
         text-decoration: none;
     }
 
-header {
+.header {
     /*box-shadow: 1px 3px 25px 1px #ccc;*/
       /*height: 100px;*/
     height: 150px;
