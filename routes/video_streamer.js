@@ -1,5 +1,6 @@
 var fs = require('fs'),
     path = require('path');
+const keys = require('../config/keys');    
 
 function startsWith(str, prefix) {
     return str.lastIndexOf(prefix, 0) === 0;
@@ -18,8 +19,9 @@ exports.streamMovie = function(req, res) {
     if (req.params.videourl) {
         movieFileName = req.params.videourl;
     }
-
-    var streamPath = path.resolve(__dirname, "../videourl/" + movieFileName);
+    let videopath = ".." +  keys.videourlpath + movieFileName;
+   // var streamPath = path.resolve(__dirname, "../videourl/" + movieFileName);
+   var streamPath = path.resolve(__dirname, videopath);
     //Calculate the size of the file
     var stat = fs.statSync(streamPath);
     var total = stat.size;
