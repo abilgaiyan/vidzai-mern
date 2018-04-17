@@ -37,8 +37,16 @@ if (process.env.NODE_ENV ==='production'){
   // Express will serve up production assets
   // like our main.js or main.css file!
   app.use(express.static('/client/build'));
+  app.use(express.static('/client/build/css'));
+  app.use(express.static('/client/build/fonts'));
+  app.use(express.static('/client/build/img'));
+  app.use(express.static('/client/build/static'));
+  app.use(express.static('/client/build/static/css'));
+  app.use(express.static('/client/build/static/js'));
+  app.use(express.static('/client/build/static/js/vendor'));
 
-  app.use(express.static('/client/public'));
+
+ // app.use(express.static('/client/public'));
 
   
   // Express will server index.html file
