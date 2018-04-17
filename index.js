@@ -38,6 +38,8 @@ if (process.env.NODE_ENV ==='production'){
   // like our main.js or main.css file!
   app.use(express.static('/client/build'));
 
+  app.use(express.static('/client/public'));
+
   
   // Express will server index.html file
   // if it does'not reconizes the route
