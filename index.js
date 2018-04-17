@@ -9,7 +9,10 @@ require('./models/Survey');
 require('./models/Contactus');
 //require('./services/passport');
 //console.log(keys.mongodbURL)
-mongoose.connect(keys.mongodbURL);
+
+//mongoose.connect(keys.mongodbURL);
+mongoose.connect('mongodb://vidzai:vidzai@ds145178.mlab.com:45178/vidzai-dev');
+
 
 const app = express();
 
