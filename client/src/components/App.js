@@ -15,7 +15,7 @@ import ContactusNew from './contactus/ContactusNew';
 
 class  App extends Component {
   componentDidMount(){
-    this.props.fetchUser();
+ //   this.props.fetchUser();
 }
 
   render(){

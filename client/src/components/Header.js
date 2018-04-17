@@ -5,40 +5,57 @@ import {Link} from 'react-router-dom';
 
 class Header extends  Component {
     renderContent(){
-      console.log(this.props.auth);
-      switch (this.props.auth) {
-        case null:
-        return[
-        <li key={4}><a href="#">You</a></li>,
-        <li key={5}><a href="#">Customer Stories</a></li>,
-        <li key={6}><a href="#">Agencies</a></li>,
-        <li key={7}><a href="#">Work for Us!</a></li>,
-        <li key={8}><a href="/aboutus">About Us</a></li>,
-        <li key={9}><a href="/contactus">Contact Us</a></li>,
-        <li><a href="/auth/google">Login With Google</a></li>]
-        case false:
-         // return <li><a href="/auth/google">Login With Google</a></li>   
-         return[
-          <li key={14}><a href="#">You</a></li>,
-          <li key={15}><a href="#">Customer Stories</a></li>,
-          <li key={16}><a href="#">Agencies</a></li>,
-          <li key={17}><a href="#">Work for Us!</a></li>,
-          <li key={18}><a href="/aboutus">About Us</a></li>,
-          <li key={19}><a href="/contactus">Contact Us</a></li>,
-          <li><a href="/auth/google">Login With Google</a></li>]
-        default:
-         return [
-          <li key={1}><Payments /></li>,
-          <li key={3} style={{margin: '0 10px'}}>
-             Credits: {this.props.auth.credits}
-          </li>, 
-          <li key={2}><a href="/api/logout">Logout</a></li>,
-         
-         ]
-      }
+      <div class="tt-header clearfix">
+      <div class="container-fluid">
+          <div class="col-sm-3 wow fadeInLeft">
+              <a class="logo" href="javascript:void(0)">
+                  <img src="img/logo.png" alt=""/>
+              </a>
+          </div>
+          <div class="col-sm-9">
+              <nav class="navbar navbar-default">
+                  <div class="">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+
+                      </div>
+                      <div id="navbar" class="navbar-collapse collapse pull-right  wow fadeInRight" aria-expanded="false" style="height: 1px;">
+                          <ul class="nav navbar-nav">
+                              <li><a href="#">You </a></li>
+                              <li>
+                                  <a href="#CustomerStories">
+                                      Customer Stories
+                                  </a>
+                              </li>
+                              <li><a href="#Agency">Agency</a></li>
+                              <li>
+                                  <a href="#WorkforUs">
+                                      Work for Us!
+                                  </a>
+                              </li>
+
+                          </ul>
+
+                      </div>
+                  </div>
+              </nav>
+
+
+          </div>
+
+
+          
+      </div>
+  </div>
+
     } 
     render(){
-       console.log(this.props.auth);
+       //console.log(this.props.auth);
         return (
             <nav>
             <div className="nav-wrapper">
