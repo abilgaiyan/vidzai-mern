@@ -40,16 +40,50 @@ class Header extends  Component {
       }
     } 
     render(){
-       console.log(this.props.auth);
+     //  console.log(this.props.auth);
         return (
-            <nav>
-            <div className="nav-wrapper">
-              <Link to={this.props.auth ? "/surveys" : "/"} className="left brand-logo">Vidzai</Link>
-              <ul className="right">
-               {this.renderContent()}
-              </ul>
-            </div>
-          </nav>
+          <header className="tt-header clearfix">
+          <div className="container-fluid">
+              <div className="col-sm-3 wow fadeInLeft">
+                  <a className="logo" href="javascript:void(0)">
+                      <img src="img/logo.png" alt="" />
+                  </a>
+              </div>
+              <div className="col-sm-9">
+                  <nav className="navbar navbar-default">
+                      <div className="">
+                          <div className="navbar-header">
+                              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                  <span className="sr-only">Toggle navigation</span>
+                                  <span className="icon-bar"></span>
+                                  <span className="icon-bar"></span>
+                                  <span className="icon-bar"></span>
+                              </button>
+  
+                          </div>
+                          <div id="navbar" className="navbar-collapse collapse pull-right  wow fadeInRight" aria-expanded="false" style={{height: "1px"}}>
+                              <ul className="nav navbar-nav">
+                                  <li key={1}><Link to="">You</Link></li>
+                                  <li key={2}><Link to="/customerstories">Customer Stories</Link></li>
+                                  <li key={3}><Link to="/agencies">Agency</Link></li>
+                                  <li key={4}><Link to="">Work for Us!</Link></li>
+                                  <li key={5}><Link to="/aboutus">About Us</Link></li>
+                                  <li key={6}><Link to="/contactus/new">Contact Us</Link></li>
+  
+                              </ul>
+  
+                          </div>
+                      </div>
+                  </nav>
+  
+  
+              </div>
+  
+  
+            
+          </div>
+      </header>
+  
         );
     }
 
