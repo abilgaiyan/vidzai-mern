@@ -45,9 +45,9 @@ class Header extends  Component {
           <header className="tt-header clearfix">
           <div className="container-fluid">
               <div className="col-sm-3 wow fadeInLeft">
-                  <a className="logo" href="javascript:void(0)">
-                      <img src="img/logo.png" alt="" />
-                  </a>
+              <Link to="/"><img src="img/logo.png" alt="" /></Link>
+                      
+                  
               </div>
               <div className="col-sm-9">
                   <nav className="navbar navbar-default">

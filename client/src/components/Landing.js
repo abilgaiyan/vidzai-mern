@@ -30,30 +30,36 @@ class  Landing extends Component {
     console.log(this.state.counter);
     console.log(this.videolist.length);
      if (this.state.counter > this.videolist.length -1 ){
-       return;
+      this.setState({counter: 0});
+      return;
      }
 
     return(
         <div>
-          <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p>
-           <ReactPlayer 
-         //url='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' 
-         url= {this.videolist[this.state.counter].videourl}
-         onEnded={() => this.renderNextVideo(this.state.counter + 1)}
-       playing />
-      
-    {/* <Player
-      playsInline
-      poster="/assets/poster.png" 
-      src={this.videolist[this.state.counter].videourl}
-      // src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    /> */}
-
-    {/* <video id="my_video_1" class="video-js vjs-default-skin" controls  
-    preload="auto" width="640" height="264" poster="my_video_poster.png"  
-    data-setup="{}">  
-    <source src="http://localhost:5000/api/videourl/Thank-You-Clean_v1.mp4" 
-      type='video/mp4'/> </video> */}
+         <div className="container-fluid wow fadeInUp">
+            
+            <div className="tt-banner">
+                <div className="tt-banner-inner">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <div className="tt-banner-info">
+                                <h5 className="tt-banner-label"> <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> </h5>
+                                <h1 className="tt-banner-title"> <strong>> {this.videolist[this.state.counter].name} </strong> <br/>into customers</h1>
+                            </div>
+                        </div>
+						<div className="col-sm-6">
+                    <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
+                    {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
+           <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
+              onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing />
+					
+					
+				</div>
+                    </div>
+					
+                </div>
+            </div>
+        </div>
 
         </div>
     )
@@ -67,15 +73,9 @@ class  Landing extends Component {
     }
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>
-        Vidzai!
-      </h1>
-      Collect feedback from your users
-       <br/>
+    <div >
        <div className='player-wrapper'>
          {this.renderVideo(0)} 
-        
       </div>
     </div>
   );
