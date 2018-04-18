@@ -2,12 +2,18 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import ContactusField from './ContactusField';
 import validateEmails from '../../utils/validateEmails';
 import formFields from './formFields';
+import { withRouter } from 'react-router-dom';
+import * as actions from '../../actions';
 
 class ContactusForm extends Component {
+  constructor(props){
+    super(props);
+  }
   renderFields() {
     return _.map(formFields, ({ label, name }) => {
       return (
@@ -25,13 +31,13 @@ class ContactusForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.props.handleSubmit(this.props.onContactusSubmit)}>
+        <form onSubmit={() =>this.props.handleSubmit(this.props.submitContactus(this.props.formValues, this.props.history))}>
           {this.renderFields()}
           <Link to="/contactus" className="red btn-flat white-text">
             Cancel
           </Link>
-          <button type="submit" className="teal btn-flat right white-text">
-            Next
+          <button type="submit" className="teal btn-flat right white-text" >
+            Save
             <i className="material-icons right">done</i>
           </button>
         </form>
@@ -53,9 +59,19 @@ function validate(values) {
 
   return errors;
 }
+function mapStateToProps(state) {
+  //console.log(state.form.contactusForm.values);
+  return { formValues: state.form.contactusForm.values };
+}
 
+ContactusForm = connect(mapStateToProps, actions)(withRouter(ContactusForm));
 export default reduxForm({
   validate,
   form: 'contactusForm',
   destroyOnUnmount: false
-})(ContactusForm);
+})(withRouter(ContactusForm));
+
+
+//export default connect(mapStateToProps, actions)(withRouter(ContactusForm));
+
+

@@ -12,9 +12,11 @@ class  Landing extends Component {
   }
 
    videolist = [
-    {id: 1, name: 'clara1', videourl: 'http://localhost:3000/api/videourl/Thank-You-Clean_v1.mp4'},
-    {id: 2, name: 'clara2', videourl: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4'},
-    {id: 3, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'},
+    {id: 1, name: 'Clara', videourl: 'http://localhost:3000/api/videourl/clara.mp4'},
+    {id: 2, name: 'Jane', videourl: 'http://localhost:3000/api/videourl/Jane.mp4'},
+    {id: 3, name: 'Mary', videourl: 'http://localhost:3000/api/videourl/Mary.mp4'},
+    //{id: 4, name: 'clara2', videourl: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4'},
+    //{id: 5, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'},
   ]
   
   
@@ -27,13 +29,13 @@ class  Landing extends Component {
   renderVideo = (vi) =>{
     console.log(this.state.counter);
     console.log(this.videolist.length);
-     if (this.state.counter > this.videolist.length ){
+     if (this.state.counter > this.videolist.length -1 ){
        return;
      }
 
     return(
         <div>
-          <p>Video for: {this.videolist[this.state.counter].name}</p>
+          <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p>
            <ReactPlayer 
          //url='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' 
          url= {this.videolist[this.state.counter].videourl}

@@ -14,19 +14,19 @@ function endsWith(str, suffix) {
 exports.streamMovie = function(req, res) {
     //console.log(req);
     // Get the filename
-    var movieFileName = "";
+    let movieFileName = "";
 
     if (req.params.videourl) {
         movieFileName = req.params.videourl;
     }
-    //let videopath = ".." +  keys.videourlpath + movieFileName;
-    var streamPath = path.resolve(__dirname, "../videourl/" + movieFileName);
-   //var streamPath = path.resolve(__dirname, videopath);
+    let videopath = ".." +  keys.videourlpath + movieFileName;
+    //var streamPath = path.resolve(__dirname, "../videourl/" + movieFileName);
+    let streamPath = path.resolve(__dirname, videopath);
     //Calculate the size of the file
-    var stat = fs.statSync(streamPath);
-    var total = stat.size;
-    var file;
-    var contentType = "video/mp4";
+    let stat = fs.statSync(streamPath);
+    let total = stat.size;
+    let file;
+    let contentType = "video/mp4";
 
     if (endsWith(movieFileName, ".ogg")) {
         contentType = "video/ogg";
@@ -38,14 +38,14 @@ exports.streamMovie = function(req, res) {
 
     // Chunks based streaming
     if (req.headers.range) {
-        var range = req.headers.range;
-        var parts = range.replace(/bytes=/, "").split("-");
-        var partialstart = parts[0];
-        var partialend = parts[1];
+        let range = req.headers.range;
+        let parts = range.replace(/bytes=/, "").split("-");
+        let partialstart = parts[0];
+        let partialend = parts[1];
 
-        var start = parseInt(partialstart, 10);
-        var end = partialend ? parseInt(partialend, 10) : total - 1;
-        var chunksize = (end - start) + 1;
+        let start = parseInt(partialstart, 10);
+        let end = partialend ? parseInt(partialend, 10) : total - 1;
+        let chunksize = (end - start) + 1;
         console.log('RANGE: ' + start + ' - ' + end + ' = ' + chunksize);
 
         file = fs.createReadStream(streamPath, {
