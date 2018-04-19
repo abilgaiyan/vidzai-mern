@@ -28,7 +28,7 @@ class  Landing extends Component {
   }
 
   playVideo(playing){
-   return ( <ReactPlayer  ref="reactplayerRef" className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
+   return ( <ReactPlayer  ref="reactplayerRef" className="bannervideo"  height={'500px'} width={'500px'} url= {this.videolist[this.state.counter].videourl}
     onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing={playing} />
   );
   }
@@ -38,7 +38,7 @@ class  Landing extends Component {
      if (this.state.counter > this.videolist.length -1 ){
       //this.setState({counter: 0});
       //this.renderNextVideo(0);
-      this.playVideo(false);
+      this.playVideo(true);
       return;
      }
 
@@ -56,13 +56,25 @@ class  Landing extends Component {
                                 <h1 className="tt-banner-title"> WoW {this.videolist[this.state.counter].name}<br /> through a Visual & Personal Story</h1>
                             </div>
                         </div>
-                        <div> Like what you see? Try it for yourself </div>
+                      
 						<div className="col-sm-6">
                     <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
 					      {this.state.counter  < this.videolist.length -1 ? this.playVideo(true) : this.playVideo(false) }
-          <Link to="/you">You</Link>
+               
 				</div>
+        <div className="col-sm-12 text-center marginTop10 footerarrow">
+        <p>Like what you see? Try it for yourself</p>
+        <div className="arrow bounce marginTop20">
+          <Link to="/you"> <i className="fa fa-angle-double-down fa-3x"></i></Link>
+          </div>
+          </div>
+
+     
+
+
+
+        
                     </div>
 					
                 </div>

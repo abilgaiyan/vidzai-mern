@@ -5439,17 +5439,16 @@ button {
     height: 625px;
     background: #fae6f6;
     margin-bottom: 100px;
-    padding: 50px 0;
+    padding: 0;
 }
 
 .tt-banner-inner {
     display: table-cell;
     vertical-align: middle;
 }
-
 .tt-banner-info {
     margin-left: -50px;
-    margin-top: 150px;
+    margin-top: 260px;
 }
 
 .tt-banner-label p {
@@ -5706,9 +5705,9 @@ button {
 }
 
 .tt-footer-inner {
-    background: #fae6f6;
-    padding-top: 106px;
-    padding-bottom: 100px;
+    background: #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .tt-footer-title {
@@ -5730,9 +5729,9 @@ button {
 .tt-footer-line {
     font-size: 12px;
     line-height: 16px;
-    font-weight: 400;
     color: #676a6a;
     padding: 42px 0;
+    font-weight: 500;
 }
 
 @media (max-width: 991px) {
@@ -5978,19 +5977,19 @@ strong, b {
 }
 }
 .bannervideo {
-    width: 68%;
-    height: 618px;
+    width: 84% !important;
+    height: 100%!important;
     position: absolute;
-    top: -15%;
-    left: 11%;
+    top: -11%;
+    left: 6%;
     right: 0;
-    transform: skewX(-15deg) skewY(15deg) matrix3d(1, 0, -0.17, -0.0005, 0, 1, 0, 0, 0.17, 0, 1, 0, 0, 0, 0, 1) skewX(3deg) skewY(-18deg);
+    z-index: 99;
+    /* transform: skewX(-15deg) skewY(15deg) matrix3d(1, 0, -0.17, -0.0005, 0, 1, 0, 0, 0.17, 0, 1, 0, 0, 0, 0, 1) skewX(3deg) skewY(-18deg);
     -webkit-transform: skewX(-15deg) skewY(15deg) matrix3d(1, 0, -0.17, -0.0005, 0, 1, 0, 0, 0.17, 0, 1, 0, 0, 0, 0, 1) skewX(3deg) skewY(-18deg);
     transform-origin: center center 0px;
     transition: all 0.2s ease 0s;
     -webkit-transform-origin: center center 0px;
-    -webkit-transition: all 0.2s ease 0s;
-	z-index:99;
+    -webkit-transition: all 0.2s ease 0s; */
 }
 .resp-container {
     position: relative;
@@ -6013,3 +6012,37 @@ audio, canvas, progress, video {
     display: inline-block;
     vertical-align: baseline;
 }
+
+
+/* scroll down arrow*/
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+    
+  }
+  .bounce a{
+    color: #777;
+    font-size: 15px;
+      }
+      .bounce a:hover{
+        color: #333;
+      }
+.footerarrow p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+/* Ens scroll down arrow*/
