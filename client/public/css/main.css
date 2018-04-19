@@ -5449,16 +5449,16 @@ button {
 
 .tt-banner-info {
     margin-left: -50px;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
-.tt-banner-label {
+.tt-banner-label p {
     display: inline-block;
     font-size: 20px;
     line-height: 18px;
     font-weight: 700;
     color: #272b2b;
-    text-transform: uppercase;
+    text-transform:capitalize;
     border-top: 2px solid #272b2b;
     padding-left: 71px;
     padding-top: 5px;
@@ -5466,8 +5466,8 @@ button {
 }
 
 .tt-banner-title {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 31px;
+    line-height:36px;
     font-weight: 700;
     color: #272b2b;
 }

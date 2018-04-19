@@ -11,6 +11,8 @@ import Contactus from './Contactus';
 import ContactusNew from './contactus/ContactusNew';
 import CustomerStories from './CustomerStories';
 import Agencies from './Agencies';
+import You from './You';
+
 
 
 
@@ -34,6 +36,7 @@ class  App extends Component {
            <Route path="/contactus/new" component={ContactusNew} />
            <Route path="/customerstories" component={CustomerStories} />
            <Route path="/agencies" component={Agencies} />
+           <Route path="/you" component={You} />
         </div>
         </BrowserRouter>  
       </div>

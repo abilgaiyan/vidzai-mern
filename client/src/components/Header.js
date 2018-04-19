@@ -54,9 +54,7 @@ class Header extends  Component {
           <div className="tt-header clearfix">
           <div className="container-fluid">
               <div className="col-sm-3 wow fadeInLeft">
-                  <a className="logo" href="javascript:void(0)">
-                      <img src="img/logo.png" alt=""/>>
-                  </a>
+              <Link to="/"><img src="img/logo.png" alt=""/></Link>
               </div>
               <div className="col-sm-9">
                   <nav className="navbar navbar-default">
@@ -72,7 +70,7 @@ class Header extends  Component {
                           </div>
                           <div id="navbar" className="navbar-collapse collapse pull-right  wow fadeInRight" aria-expanded="false" style={{height: "1px"}}>
                               <ul className="nav navbar-nav">
-                              <li key={4}><Link to="">You</Link></li>
+                              <li key={4}><Link to="/you">You</Link></li>
                               <li key={5}><Link to="/customerstories">Customer Stories</Link></li>
                               <li key={6}><Link to="/agencies">Agencies</Link></li>
                               <li key={7}><Link to="">Work for Us!</Link></li>
