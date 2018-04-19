@@ -9,7 +9,7 @@ class  Landing extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {counter: 0};
+    this.state = {counter: 0, playing: true};
   }
 
    videolist = [
@@ -20,12 +20,17 @@ class  Landing extends Component {
     //{id: 5, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'},
   ]
   
-  
 
   renderNextVideo =(vi) => {
     //console.log(vi);
     this.setState({counter: vi});
     this.renderVideo(this.state.counter);
+  }
+
+  playVideo(playing){
+   return ( <ReactPlayer  ref="reactplayerRef" className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
+    onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing={playing} />
+  );
   }
   renderVideo = (vi) =>{
     //console.log(this.state.counter);
@@ -33,8 +38,10 @@ class  Landing extends Component {
      if (this.state.counter > this.videolist.length -1 ){
       //this.setState({counter: 0});
       //this.renderNextVideo(0);
+      this.playVideo(false);
       return;
      }
+
 
     return(
         <div>
@@ -53,9 +60,7 @@ class  Landing extends Component {
 						<div className="col-sm-6">
                     <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
-           {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
-              onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
-					
+					      {this.state.counter  < this.videolist.length -1 ? this.playVideo(true) : this.playVideo(false) }
           <Link to="/you">You</Link>
 				</div>
                     </div>
