@@ -27,10 +27,11 @@ class  Landing extends Component {
     this.renderVideo(this.state.counter);
   }
   renderVideo = (vi) =>{
-    console.log(this.state.counter);
-    console.log(this.videolist.length);
+    //console.log(this.state.counter);
+    //console.log(this.videolist.length);
      if (this.state.counter > this.videolist.length -1 ){
-      this.setState({counter: 0});
+      //this.setState({counter: 0});
+      this.renderNextVideo(0);
       return;
      }
 

@@ -51,7 +51,7 @@ class Header extends  Component {
           //   </div>
           // </nav>
 
-          <div classNameName="tt-header clearfix">
+          <div className="tt-header clearfix">
           <div className="container-fluid">
               <div className="col-sm-3 wow fadeInLeft">
                   <a className="logo" href="javascript:void(0)">
@@ -70,20 +70,14 @@ class Header extends  Component {
                               </button>
   
                           </div>
-                          <div id="navbar" className="navbar-collapse collapse pull-right  wow fadeInRight" aria-expanded="false" style="height: 1px;">
+                          <div id="navbar" className="navbar-collapse collapse pull-right  wow fadeInRight" aria-expanded="false" style={{height: "1px"}}>
                               <ul className="nav navbar-nav">
-                                  <li><a href="#">You </a></li>
-                                  <li>
-                                      <a href="#CustomerStories">
-                                          Customer Stories
-                                      </a>
-                                  </li>
-                                  <li><a href="#Agency">Agency</a></li>
-                                  <li>
-                                      <a href="#WorkforUs">
-                                          Work for Us!
-                                      </a>
-                                  </li>
+                              <li key={4}><Link to="">You</Link></li>
+                              <li key={5}><Link to="/customerstories">Customer Stories</Link></li>
+                              <li key={6}><Link to="/agencies">Agencies</Link></li>
+                              <li key={7}><Link to="">Work for Us!</Link></li>
+                              <li key={8}><Link to="/aboutus">About Us</Link></li>
+                              <li key={9}><Link to="/contactus/new">Contact Us</Link></li>
   
                               </ul>
   
