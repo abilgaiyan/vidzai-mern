@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 //import '../../node_modules/video-react/dist/video-react.css';
 //import { Player } from 'video-react';
 import ReactPlayer from 'react-player';
+import {Link} from 'react-router-dom';
 
 class  Landing extends Component {
 
@@ -27,10 +28,11 @@ class  Landing extends Component {
     this.renderVideo(this.state.counter);
   }
   renderVideo = (vi) =>{
-    console.log(this.state.counter);
-    console.log(this.videolist.length);
+    //console.log(this.state.counter);
+    //console.log(this.videolist.length);
      if (this.state.counter > this.videolist.length -1 ){
-      this.setState({counter: 0});
+      //this.setState({counter: 0});
+      //this.renderNextVideo(0);
       return;
      }
 
@@ -43,17 +45,18 @@ class  Landing extends Component {
                     <div className="row">
                         <div className="col-sm-6">
                             <div className="tt-banner-info">
-                                <h5 className="tt-banner-label"> <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> </h5>
-                                <h1 className="tt-banner-title"> <strong>> {this.videolist[this.state.counter].name} </strong> <br/>into customers</h1>
+                                <h5 className="tt-banner-label"> <p>Video is now Personal</p> </h5>
+                                <h1 className="tt-banner-title"> WoW {this.videolist[this.state.counter].name}<br /> through a Visual & Personal Story</h1>
                             </div>
                         </div>
+                        <div> Like what you see? Try it for yourself </div>
 						<div className="col-sm-6">
                     <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
-           <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
-              onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing />
+           {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
+              onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
 					
-					
+          <Link to="/you">You</Link>
 				</div>
                     </div>
 					
