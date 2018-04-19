@@ -5439,7 +5439,7 @@ button {
     height: 625px;
     background: #fae6f6;
     margin-bottom: 100px;
-    padding: 0;
+    padding: 0 0 50px;
 }
 
 .tt-banner-inner {

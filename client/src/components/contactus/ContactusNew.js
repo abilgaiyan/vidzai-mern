@@ -17,7 +17,7 @@ class ContactusNew extends Component {
 
     render(){
         return (
-            <div>
+            <div className="container">
                 {this.renderContents()}
             </div>
         );

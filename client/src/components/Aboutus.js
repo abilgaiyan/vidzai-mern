@@ -2,30 +2,34 @@ import React from 'react';
 
 const Aboutus = () => {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>
-        About Vidzai!
-      </h1>
-        AboutUs Page
+    <div>
+    <div className="container-fluid wow fadeInUp">
+       
+       <div className="tt-banner">
+           <div className="tt-banner-inner">
+               <div className="row">
+                   <div className="col-sm-6">
+                       <div className="tt-banner-info">
+                           <h5 className="tt-banner-label"> <p>Personal Video engages customers</p> </h5>
+                           <h1 className="tt-banner-title">Create an emotional experience for Customer Her name, her data, her story</h1>
+                       </div>
+                   </div>
+                   {/* <div> Like what you see? Try it for yourself </div> */}
+       <div className="col-sm-6">
+               <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
+               {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
+      {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
+         onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
+     
+     
+   </div>
+               </div>
+     
+           </div>
+       </div>
+   </div>
 
-
-               <div className="container">
-
-<div className="row">
-    <div className="col-sm-12  img-center">
-        <div className="tt-title">
-            <div className="tt-title-count wow fadeInUp" data-wow-delay="100ms">About US</div>
-            <h3 className="tt-title-name wow fadeInUp" data-wow-delay="200ms">CLARA into customers </h3>
-            <div className="tt-title-text wow fadeInUp" data-wow-delay="300ms">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        </div>
-    </div>
-</div>
-
-   
-   
-   
-            </div>
-        </div>
+   </div>
 
   );
 };

@@ -2,26 +2,32 @@ import React from 'react';
 
 const Agencies = () => {
     return (
-      <div style={{ textAlign: 'center' }}>
-        <h1> Agency </h1>
-        <h6>Resell Innovative Personalised Videos</h6>
-        <header className="tt-header clearfix">
-        <div className="container-fluid">
         <div>
-        <p> Give your customers a way to shine </p>
-        <p>
-            Do you run a marketing, Advertising, Event Planning Agency? Do you help enterprises shape the communication to their customers? </p> 
-        <p>
-            You can become our Affiliate and use our platform to create these engaging stories for your customers. 
-            Earn payouts from Sale of Vidzai technology when you promote us. 
-        </p>
-        <p>We will handhold you through entire process right from training, Closing the sales and post sales support</p>
-        </div>
-         
-
-         </div> 
-    </header>
- 
+        <div className="container-fluid wow fadeInUp">
+           
+           <div className="tt-banner">
+               <div className="tt-banner-inner">
+                   <div className="row">
+                       <div className="col-sm-6">
+                           <div className="tt-banner-info">
+                               <h5 className="tt-banner-label"> <p>Personal Video engages customers</p> </h5>
+                               <h1 className="tt-banner-title">Create an emotional experience for Customer Her name, her data, her story</h1>
+                           </div>
+                       </div>
+                       {/* <div> Like what you see? Try it for yourself </div> */}
+                       <div className="col-sm-6">
+                   <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
+                   {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
+          {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
+             onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
+                   
+                   
+               </div>
+                   </div>
+                   
+               </div>
+           </div>
+       </div>
 
        </div>
       );
