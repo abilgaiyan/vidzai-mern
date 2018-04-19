@@ -11,9 +11,7 @@ import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions';
 
 class ContactusForm extends Component {
-  constructor(props){
-    super(props);
-  }
+  
   renderFields() {
     return _.map(formFields, ({ label, name }) => {
       return (

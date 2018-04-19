@@ -12,6 +12,7 @@ import ContactusNew from './contactus/ContactusNew';
 import CustomerStories from './CustomerStories';
 import Agencies from './Agencies';
 import You from './You';
+import Footer from './Footer';
 
 
 
@@ -37,6 +38,7 @@ class  App extends Component {
            <Route path="/customerstories" component={CustomerStories} />
            <Route path="/agencies" component={Agencies} />
            <Route path="/you" component={You} />
+           <Footer />
         </div>
         </BrowserRouter>  
       </div>
