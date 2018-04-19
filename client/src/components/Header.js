@@ -42,14 +42,63 @@ class Header extends  Component {
     render(){
        console.log(this.props.auth);
         return (
-            <nav>
-            <div className="nav-wrapper">
-              <Link to={this.props.auth ? "/surveys" : "/"} className="left brand-logo">Vidzai</Link>
-              <ul className="right">
-               {this.renderContent()}
-              </ul>
-            </div>
-          </nav>
+          //   <nav>
+          //   <div classNameName="nav-wrapper">
+          //     <Link to={this.props.auth ? "/surveys" : "/"} classNameName="left brand-logo">Vidzai</Link>
+          //     <ul classNameName="right">
+          //      {this.renderContent()}
+          //     </ul>
+          //   </div>
+          // </nav>
+
+          <div classNameName="tt-header clearfix">
+          <div className="container-fluid">
+              <div className="col-sm-3 wow fadeInLeft">
+                  <a className="logo" href="javascript:void(0)">
+                      <img src="img/logo.png" alt=""/>>
+                  </a>
+              </div>
+              <div className="col-sm-9">
+                  <nav className="navbar navbar-default">
+                      <div className="">
+                          <div className="navbar-header">
+                              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                  <span className="sr-only">Toggle navigation</span>
+                                  <span className="icon-bar"></span>
+                                  <span className="icon-bar"></span>
+                                  <span className="icon-bar"></span>
+                              </button>
+  
+                          </div>
+                          <div id="navbar" className="navbar-collapse collapse pull-right  wow fadeInRight" aria-expanded="false" style="height: 1px;">
+                              <ul className="nav navbar-nav">
+                                  <li><a href="#">You </a></li>
+                                  <li>
+                                      <a href="#CustomerStories">
+                                          Customer Stories
+                                      </a>
+                                  </li>
+                                  <li><a href="#Agency">Agency</a></li>
+                                  <li>
+                                      <a href="#WorkforUs">
+                                          Work for Us!
+                                      </a>
+                                  </li>
+  
+                              </ul>
+  
+                          </div>
+                      </div>
+                  </nav>
+  
+  
+              </div>
+  
+  
+
+          </div>
+      </div>
+  
         );
     }
 
