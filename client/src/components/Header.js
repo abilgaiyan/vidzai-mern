@@ -72,7 +72,7 @@ class Header extends  Component {
                               <ul className="nav navbar-nav">
                               <li key={4}><Link to="/you">You</Link></li>
                               <li key={5}><Link to="/customerstories">Customer Stories</Link></li>
-                              <li key={6}><Link to="/agencies">Agencies</Link></li>
+                              <li key={6}><Link to="/agencies">Agency</Link></li>
                               <li key={7}><Link to="">Work for Us!</Link></li>
                               <li key={8}><Link to="/aboutus">About Us</Link></li>
                               <li key={9}><Link to="/contactus/new">Contact Us</Link></li>
