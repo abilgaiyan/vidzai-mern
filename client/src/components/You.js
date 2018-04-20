@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const You = () => {
     return (
@@ -28,6 +29,38 @@ const You = () => {
                 </div>
             </div>
         </div>
+        <div className="container-fluid wow fadeInUp marginTop40 marginBottom40">
+<div className="col-sm-5 col-xs-12 youleft">
+<h3>Creativity + Customer Context + Technology</h3>
+<h1>How Vidzai can help You</h1>
+</div>
+<div className="col-sm-7 col-xs-12 youright"><p><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+
+We can help You, as a Marketeer, to transform your customer communications. We can do this by adding engaging visuals, personalized data and interactions on visuals and voice, to attract new customers. 
+</p>
+<p>
+<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+We can help You, as Sales Managers, to send contextualized video statements and explainers, taking data and insights from your enterprise systems, and creating unique cross-sell opportunities to your existing customers. 
+</p>
+<p>
+<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+And we can build customized interactions, call to Action and Analytics on the video to help You measure the effectiveness of the communication.   
+</p>
+<p>
+<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+We have an excellent creative team to build creative story boards, illustrations and animations. Our design studio understands the corporate language to make your story unique and differentiated
+</p>
+<p>
+We have a unique AI and Video technology at work to create this immersive personal and interactive experience, at scale. 
+</p>
+<Link className="c-btn size-2 wow fadeInUp" to="/customerstories">Show Sample</Link>
+</div>
+</div>
+
+
+
+
+
 
         </div>
     );

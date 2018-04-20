@@ -2,6 +2,7 @@ import React , { Component } from 'react';
 import ContactusForm from './ContactusForm';
 import ContactusFormReview from './ContactusFormReview';
 
+
 class ContactusNew extends Component {
 
     state = {showFormReview: false};
@@ -17,7 +18,7 @@ class ContactusNew extends Component {
 
     render(){
         return (
-            <div className="container">
+            <div className="container marginBottom40">
                 {this.renderContents()}
             </div>
         );
