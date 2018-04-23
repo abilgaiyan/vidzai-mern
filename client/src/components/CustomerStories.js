@@ -12,7 +12,7 @@ const CustomerStories = () => {
                      <div className="col-sm-6">
                          <div className="tt-banner-info">
                              <h5 className="tt-banner-label"> <p>Personal Video engages customers</p> </h5>
-                             <h1 className="tt-banner-title">Create an emotional experience for Customer Her name, her data, her story</h1>
+                             <h1 className="tt-banner-title">Your story, your touch, your way, with Vidzai </h1>
                          </div>
                      </div>
                      {/* <div> Like what you see? Try it for yourself </div> */}

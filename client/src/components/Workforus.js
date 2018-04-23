@@ -33,8 +33,7 @@ const Agencies = () => {
 <div className="col-sm-5 col-xs-12 youleft">
 <h3>Creativity + Technology + Go To Market
  </h3>
-<h1>We are awesome and 
-<br /> therefore need You</h1>
+<h1>We are awesome and <br /> therefore need You</h1>
 </div>
 <div className="col-sm-7 col-xs-12 youright Agency"><p>
 

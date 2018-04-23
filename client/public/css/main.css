@@ -5464,10 +5464,11 @@ button {
 }
 
 .tt-banner-title {
-    font-size: 31px;
-    line-height:36px;
-    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
     color: #272b2b;
+    font-family: 'Courgette', cursive;
 }
 
 .tt-banner-img {
