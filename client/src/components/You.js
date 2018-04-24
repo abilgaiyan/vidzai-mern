@@ -22,6 +22,12 @@ const You = () => {
            {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
               onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
 					
+
+                    <div class="typewriter">
+                         <h1>Did you hear them calling out CLARA?</h1>
+                    </div>
+
+
 					
 				</div>
                     </div>
