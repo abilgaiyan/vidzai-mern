@@ -6116,3 +6116,10 @@ div.desktop-wrapper video {
     height: 100%;
     object-fit: fill;
 }
+@media (min-width: 767px) and (max-width: 1400px)  {
+
+    div.desktop-wrapper video {       
+        padding: 3.1% 8.8% 17.6%; /*0 4.6% 25%*/
+    }
+
+}

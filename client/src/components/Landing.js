@@ -28,18 +28,22 @@ class  Landing extends Component {
   }
 
   playVideo(playing){
-   return ( <ReactPlayer  ref="reactplayerRef" className="desktop-wrapper pull-right"  height={'500px'} width={'660px'} url= {this.videolist[this.state.counter].videourl}
+    const vi = this.state.counter > this.videolist.length -1 ? this.videolist.length -1 :  this.state.counter; 
+   return ( <ReactPlayer  ref="reactplayerRef" className="bannervideo"  height={'500px'} width={'500px'} url= {this.videolist[vi].videourl}
     onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing={playing} />
   );
   }
-  renderVideo = (vi) =>{
+  renderVideo = (vii) =>{
+    const vi = this.state.counter > this.videolist.length -1 ? this.videolist.length -1 :  this.state.counter; 
     //console.log(this.state.counter);
     //console.log(this.videolist.length);
-     if (this.state.counter > this.videolist.length -1 ){
+     if (vi > this.videolist.length -1 ){
       //this.setState({counter: 0});
       //this.renderNextVideo(0);
-      this.playVideo(true);
-      return;
+      //debugger;
+      console.log(vi);
+      this.playVideo(false);
+      //return;
      }
 
 
@@ -53,14 +57,14 @@ class  Landing extends Component {
                         <div className="col-sm-6">
                             <div className="tt-banner-info">
                                 <h5 className="tt-banner-label"> <p>Video is now Personal</p> </h5>
-                                <h1 className="tt-banner-title"> WoW {this.videolist[this.state.counter].name}<br /> through a Visual & Personal Story</h1>
+                                <h1 className="tt-banner-title"> WoW {this.videolist[vi].name}<br /> through a Visual & Personal Story</h1>
                             </div>
                         </div>
                       
 						<div className="col-sm-6">
                     {/* <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} /> */}
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
-					      {this.state.counter  < this.videolist.length -1 ? this.playVideo(true) : this.playVideo(false) }
+					      {vi  <= this.videolist.length - 1 ? this.playVideo(true) : this.playVideo(false) }
                
 				</div>
         <div className="col-sm-12 text-center marginTop10 footerarrow">
