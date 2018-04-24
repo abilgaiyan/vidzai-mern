@@ -23,6 +23,7 @@ class  Landing extends Component {
 
   renderNextVideo =(vi) => {
     //console.log(vi);
+    //this.playVideo(false);
     this.setState({counter: vi});
     this.renderVideo(this.state.counter);
   }

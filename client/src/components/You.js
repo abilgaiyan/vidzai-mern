@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import Typist from 'react-typist';
 const You = () => {
     return (
 <div>
@@ -21,12 +21,9 @@ const You = () => {
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
            {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
               onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
-					
-
-                    <div class="typewriter">
-                         <h1>Did you hear them calling out CLARA?</h1>
-                    </div>
-
+                <Typist className="Typist  typewriter">
+                   <h1>Did you hear them calling <br/> out CLARA?</h1>
+                </Typist>; 
 
 					
 				</div>
