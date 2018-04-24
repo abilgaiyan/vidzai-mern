@@ -22,8 +22,6 @@ class  Landing extends Component {
   
 
   renderNextVideo =(vi) => {
-    //console.log(vi);
-    //this.playVideo(false);
     this.setState({counter: vi});
     this.renderVideo(this.state.counter);
   }
@@ -31,20 +29,14 @@ class  Landing extends Component {
   playVideo(playing){
     const vi = this.state.counter > this.videolist.length -1 ? this.videolist.length -1 :  this.state.counter; 
    return ( <ReactPlayer  ref="reactplayerRef" className="desktop-wrapper pull-right"  height={'500px'} width={'660px'} url= {this.videolist[vi].videourl}
-    onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing={playing} />
+    onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing={playing}  />
   );
   }
   renderVideo = (vii) =>{
     const vi = this.state.counter > this.videolist.length -1 ? this.videolist.length -1 :  this.state.counter; 
-    //console.log(this.state.counter);
-    //console.log(this.videolist.length);
-     if (vi > this.videolist.length -1 ){
-      //this.setState({counter: 0});
-      //this.renderNextVideo(0);
-      //debugger;
-      console.log(vi);
+
+    if (vi > this.videolist.length -1 ){
       this.playVideo(false);
-      //return;
      }
 
 
