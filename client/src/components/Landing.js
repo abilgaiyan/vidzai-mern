@@ -33,12 +33,12 @@ class  Landing extends Component {
   );
   }
   renderVideo = (vi) =>{
-    //console.log(this.state.counter);
-    //console.log(this.videolist.length);
-     if (this.state.counter > this.videolist.length -1 ){
+   // console.log(this.state.counter);
+   // console.log(this.videolist.length);
+     if (this.state.counter  > this.videolist.length -1 ){
       //this.setState({counter: 0});
       //this.renderNextVideo(0);
-      this.playVideo(true);
+      this.playVideo(false);
       return;
      }
 
@@ -60,7 +60,7 @@ class  Landing extends Component {
 						<div className="col-sm-6">
                     <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
-					      {this.state.counter  < this.videolist.length -1 ? this.playVideo(true) : this.playVideo(false) }
+					      {this.state.counter  < this.videolist.length - 1 ? this.playVideo(true) : this.playVideo(false) }
                
 				</div>
         <div className="col-sm-12 text-center marginTop10 footerarrow">
