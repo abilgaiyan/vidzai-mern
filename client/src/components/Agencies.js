@@ -4,32 +4,8 @@ import {Link} from 'react-router-dom';
 const Agencies = () => {
     return (
         <div>
-        <div className="container-fluid wow fadeInUp">
-           
-           <div className="tt-banner">
-               <div className="tt-banner-inner">
-                   <div className="row">
-                       <div className="col-sm-6">
-                           <div className="tt-banner-info">
-                               <h5 className="tt-banner-label"> <p>Personal Video engages customers</p> </h5>
-                               <h1 className="tt-banner-title">Give your customers a way to shine</h1>
-                           </div>
-                       </div>
-                       {/* <div> Like what you see? Try it for yourself </div> */}
-                       <div className="col-sm-6">
-                   <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
-                   {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
-          {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
-             onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
-                   
-                   
-               </div>
-                   </div>
-                   
-               </div>
-           </div>
-       </div>
-       <div className="container-fluid wow fadeInUp marginTop40 marginBottom40">
+       
+       <div className="container-fluid wow fadeInUp marginTop70 marginBottom40">
 <div className="col-sm-5 col-xs-12 youleft">
 <h3>Resell Innovative Personalised Videos </h3>
 <h1>Give your customers a <br /> way to shine</h1>
