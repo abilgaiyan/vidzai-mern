@@ -29,7 +29,7 @@ class  Landing extends Component {
 
   playVideo(playing){
     const vi = this.state.counter > this.videolist.length -1 ? this.videolist.length -1 :  this.state.counter; 
-   return ( <ReactPlayer  ref="reactplayerRef" className="bannervideo"  height={'500px'} width={'500px'} url= {this.videolist[vi].videourl}
+   return ( <ReactPlayer  ref="reactplayerRef" className="desktop-wrapper pull-right"  height={'500px'} width={'660px'} url= {this.videolist[vi].videourl}
     onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing={playing} />
   );
   }
