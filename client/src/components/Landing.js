@@ -13,9 +13,9 @@ class  Landing extends Component {
   }
 
    videolist = [
-    {id: 1, name: 'Clara', videourl: 'http://18.216.235.248:3000/api/videourl/clara.mp4'},
-    {id: 2, name: 'Jane', videourl: 'http://18.216.235.248:3000/api/videourl/Jane.mp4'},
-    {id: 3, name: 'Mary', videourl: 'http://18.216.235.248:3000/api/videourl/Mary.mp4'},
+    {id: 1, name: 'Clara', videourl: 'http://localhost:3000/api/videourl/clara.mp4'},
+    {id: 2, name: 'Jane', videourl: 'http://localhost:3000/api/videourl/Jane.mp4'},
+    {id: 3, name: 'Mary', videourl: 'http://localhost:3000/api/videourl/Mary.mp4'},
     //{id: 4, name: 'clara2', videourl: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4'},
     //{id: 5, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'},
   ]
@@ -28,7 +28,7 @@ class  Landing extends Component {
   }
 
   playVideo(playing){
-   return ( <ReactPlayer  ref="reactplayerRef" className="bannervideo"  height={'500px'} width={'500px'} url= {this.videolist[this.state.counter].videourl}
+   return ( <ReactPlayer  ref="reactplayerRef" className="desktop-wrapper pull-right"  height={'500px'} width={'660px'} url= {this.videolist[this.state.counter].videourl}
     onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing={playing} />
   );
   }
@@ -58,7 +58,7 @@ class  Landing extends Component {
                         </div>
                       
 						<div className="col-sm-6">
-                    <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} />
+                    {/* <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} /> */}
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
 					      {this.state.counter  < this.videolist.length -1 ? this.playVideo(true) : this.playVideo(false) }
                
