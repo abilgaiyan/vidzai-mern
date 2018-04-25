@@ -22,7 +22,7 @@ const You = () => {
            {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
               onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
                 <Typist className="Typist  typewriter">
-                   <h6>Did you notice our Team Thanking customers <br/> like CLARA in the video?</h6>
+                   <h5>Did you notice our Team Thanking <br/> customers  like CLARA in the video?</h5>
                    <br/>
                    <h6>Did you hear them calling out CLARA? </h6>
                    <br/>
