@@ -55,9 +55,10 @@ const CustomerStories = () => {
                                         <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
-                                        Our applicability is across Healthcare, Education, Retail, Financial Services and other industries.
+                                        <p><strong>A Home Care Story </strong></p>
+                                        <p>Sukino – a Wellness service provider, used a personalized video to explain the Homecare services to its customers. Video stitches the dynamic customer and nurse information along with the information on Services</p>
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div className="tt-page-rating">
                                     <div className="tt-page-title test-author">Sukino And You</div>
@@ -75,9 +76,10 @@ const CustomerStories = () => {
 
                                     </div>
                                     <div className="tt-text wow fadeInUp">
-                                        Our applicability is across Healthcare, Education, Retail, Financial Services and other industries.
+                                        <p><strong> An Event Invitation Story </strong></p>
+                                        <p>Delhi Public School used the Vidzai to generate Personalized video invitations for its Annual Day function. Personalization through Parent’s names coupled with the rich visuals created an engaging experience</p>
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div className="tt-page-rating">
                                     <div className="tt-page-title test-author">DPS</div>
@@ -94,12 +96,13 @@ const CustomerStories = () => {
                                         <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
-                                        Our applicability is across Healthcare, Education, Retail, Financial Services and other industries.
+                                        <p><strong> A Patient Story </strong></p>
+                                        <p>One of the Asia’s largest hospitals* – A front runner tech enabled institution, used Vidzai to generate Personalized video for their international patients to provide information on the medical process. Video aims to augment various stages of the customer journey for the hospital </p>
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div className="tt-page-rating">
-                                    <div className="tt-page-title test-author">Retail</div>
+                                    <div className="tt-page-title test-author">Smart Hospital </div>
 
                                 </div>
                             </Link>
@@ -113,9 +116,10 @@ const CustomerStories = () => {
                                         <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
-                                        Our applicability is across Healthcare, Education, Retail, Financial Services and other industries.
+                                        <p><strong> A Retail Buyer’s Story </strong></p>
+                                        <p> A Japanese firm*, uses Vidzai to leverage its customer buying information and the loyalty points to provide an unbeatable offer for next purchase. Rich visuals including dynamic </p>
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div className="tt-page-rating">
                                     <div className="tt-page-title test-author">Retail</div>
@@ -132,31 +136,13 @@ const CustomerStories = () => {
                                         <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
-                                        Our applicability is across Healthcare, Education, Retail, Financial Services and other industries.
+                                        <p><strong> A Recruitment Story </strong></p>
+                                        <p>A Japanese HR firm* specializing in Recruitment*, runs a AI engine that matches the demand with the candidate profiles. Vidzai could be used to distribute the recommendations to its customers (currently at a prototype stage)</p>
 
-                                </div>
-                                </div>
-                                <div className="tt-page-rating">
-                                    <div className="tt-page-title test-author">Retail</div>
-
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1200ms">
-                        <div className="tt-page">
-                            <Link to="/">
-                                <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
-                                    <div className="tt-text wow fadeInUp">
-                                        Our applicability is across Healthcare, Education, Retail, Financial Services and other industries.
-
-                                </div>
                                 </div>
                                 <div className="tt-page-rating">
-                                    <div className="tt-page-title test-author">Retail</div>
+                                    <div className="tt-page-title test-author"> HR </div>
 
                                 </div>
                             </Link>
