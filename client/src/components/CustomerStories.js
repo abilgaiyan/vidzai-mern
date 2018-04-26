@@ -52,7 +52,7 @@ const CustomerStories = () => {
                             <Link to="/">
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Sukino.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong>A Home Care Story </strong></p>
@@ -72,7 +72,7 @@ const CustomerStories = () => {
                             <Link to="/">
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
 
                                     </div>
                                     <div className="tt-text wow fadeInUp">
@@ -93,7 +93,7 @@ const CustomerStories = () => {
                             <Link to="/">
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Patient Story </strong></p>
@@ -113,7 +113,7 @@ const CustomerStories = () => {
                             <Link to="/">
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Retail Buyer’s Story </strong></p>
@@ -133,7 +133,7 @@ const CustomerStories = () => {
                             <Link to="/">
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Recruitment Story </strong></p>

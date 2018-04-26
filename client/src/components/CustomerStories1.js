@@ -30,7 +30,7 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Sukino.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                             </div>
                             <div className="tt-page-rating">
                                 <div className="tt-page-title test-author">A Home Care Story</div>
@@ -42,7 +42,7 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
 
                             </div>
                             <div className="tt-page-rating">
@@ -56,7 +56,7 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
 
                             </div>
                             <div className="tt-page-rating">
@@ -70,7 +70,7 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
 
                             </div>
                             <div className="tt-page-rating">
@@ -84,7 +84,7 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
 
                             </div>
                             <div className="tt-page-rating">
