@@ -5549,16 +5549,17 @@ button {
 
 .tt-title-count {
     font-size: 50px;
-    line-height: 80px;
-    font-weight: 700;
+    line-height: 50px;
+    font-weight: 500;
     color: #272b2b;
+     font-family: 'Roboto', sans-serif;
     margin-top: 100px;
 }
 
 .tt-title-name {
     font-size: 24px;
     line-height: 28px;
-    font-weight: 700;
+    font-weight: 500;
     color: #272b2b;
     margin-bottom: 10px;
 }
@@ -5660,21 +5661,21 @@ button {
 }
 
 .test-author {
-    text-align: left;
-    display: inline-block;
+    text-align: center;
     padding: 0;
-    float: left;
+    
 }
 
 .tt-text {
     margin-top: 18px;
     line-height: 20px;
     font-weight:500;
+    color: #333;
 }
 
 .tt-rating {
     display: inline-block;
-    float: right;
+    text-align: center;
     list-style: none;
 }
 
@@ -5996,9 +5997,8 @@ strong, b {
     overflow: hidden;
     padding-bottom: 56.30%;
     padding-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     background: #fff;
+    object-fit: fill;
 }
 .resp-iframe {
     position: absolute;
