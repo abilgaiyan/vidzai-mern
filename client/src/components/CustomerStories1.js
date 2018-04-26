@@ -41,7 +41,7 @@ We will handhold you through entire process right from training, Closing the sal
                         <div className="tt-page">
                       
                         <div class="resp-container">
-						   <iframe class="resp-iframe" src="https://www.youtube.com/embed/CUYPPWmpveQ?rel=0" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+						   <iframe class="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
 						   
 						   </div>
                             <div className="tt-page-rating">
@@ -56,7 +56,7 @@ We will handhold you through entire process right from training, Closing the sal
                         <div className="tt-page">
                        
                         <div class="resp-container">
-						   <iframe class="resp-iframe" src="https://www.youtube.com/embed/CUYPPWmpveQ?rel=0" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+						   <iframe class="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
 						   
 						   </div>
                             <div className="tt-page-rating">
@@ -70,7 +70,7 @@ We will handhold you through entire process right from training, Closing the sal
                         <div className="tt-page">
                        
                         <div class="resp-container">
-						   <iframe class="resp-iframe" src="https://www.youtube.com/embed/CUYPPWmpveQ?rel=0" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+						   <iframe class="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
 						   
 						   </div>
                             <div className="tt-page-rating">
@@ -85,7 +85,7 @@ We will handhold you through entire process right from training, Closing the sal
                         <div className="tt-page">
                         
                         <div class="resp-container">
-						   <iframe class="resp-iframe" src="https://www.youtube.com/embed/CUYPPWmpveQ?rel=0" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+						   <iframe class="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
 						   
 						   </div>
                             <div className="tt-page-rating">
@@ -100,7 +100,7 @@ We will handhold you through entire process right from training, Closing the sal
                         <div className="tt-page">
                        
                         <div class="resp-container">
-						   <iframe class="resp-iframe" src="https://www.youtube.com/embed/CUYPPWmpveQ?rel=0" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+						   <iframe class="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
 						   
 						   </div>
                             <div className="tt-page-rating">
@@ -115,7 +115,7 @@ We will handhold you through entire process right from training, Closing the sal
                         <div className="tt-page">
                         
                         <div class="resp-container">
-						   <iframe class="resp-iframe" src="https://www.youtube.com/embed/CUYPPWmpveQ?rel=0" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+						   <iframe class="resp-iframe" src="http://18.216.235.248:3000/api/videourl/clara.mp4" allow="encrypted-media" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
 						   
 						   </div>
                             <div className="tt-page-rating">
