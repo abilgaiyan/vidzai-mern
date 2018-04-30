@@ -29,7 +29,7 @@ class Landing extends Component {
 
   playVideo(playing) {
     const vi = this.state.counter > this.videolist.length - 1 ? this.videolist.length - 1 : this.state.counter;
-    return (<ReactPlayer ref="reactplayerRef" className="desktop-wrapper pull-right" height={'500px'} width={'660px'} url={this.videolist[vi].videourl}
+    return (<ReactPlayer ref="reactplayerRef" className="desktop-wrapper pull-right" height={'100%'} width={'100%'} url={this.videolist[vi].videourl}
       onEnded={() => this.renderNextVideo(this.state.counter + 1)} playing={playing} />
     );
   }
@@ -55,7 +55,7 @@ class Landing extends Component {
                   </div>
                 </div>
 
-                <div className="col-sm-6">
+                <div className="col-sm-6 VideoRight">
                   {/* <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} /> */}
                   {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
                   {vi <= this.videolist.length - 1 ? this.playVideo(true) : this.playVideo(false)}

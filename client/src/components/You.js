@@ -12,7 +12,7 @@ const You = () => {
                         <div className="col-sm-6">
                             <div className="tt-banner-info">
                                 <h5 className="tt-banner-label"> <p>Personal Video engages customers</p> </h5>
-                                <h1 className="tt-banner-title">Create an emotional experience for Customer <br /> Her name, her data, her story</h1>
+                                <h1 className="tt-banner-title">Create an emotional experience for<br /> Customer  Her name, her data, her story</h1>
                             </div>
                         </div>
                         {/* <div> Like what you see? Try it for yourself </div> */}
@@ -41,20 +41,20 @@ const You = () => {
 <h3>Creativity + Customer Context + Technology</h3>
 <h1>How Vidzai can help You</h1>
 </div>
-<div className="col-sm-7 col-xs-12 youright"><p><i className="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+<div className="col-sm-7 col-xs-12 youright"><p> 
 
 We can help You, as a Marketeer, to transform your customer communications. We can do this by adding engaging visuals, personalized data and interactions on visuals and voice, to attract new customers. 
 </p>
 <p>
-<i className="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+ 
 We can help You, as Sales Managers, to send contextualized video statements and explainers, taking data and insights from your enterprise systems, and creating unique cross-sell opportunities to your existing customers. 
 </p>
 <p>
-<i className="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+ 
 And we can build customized interactions, call to Action and Analytics on the video to help You measure the effectiveness of the communication.   
 </p>
 <p>
-<i className="fa fa-chevron-circle-right" aria-hidden="true"></i> 
+ 
 We have an excellent creative team to build creative story boards, illustrations and animations. Our design studio understands the corporate language to make your story unique and differentiated
 </p>
 <p>

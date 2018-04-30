@@ -5438,7 +5438,7 @@ button {
     position: relative;
     width: 100%;
     background: #fae6f6;
-    padding: 0 0 50px;
+    padding: 0 0 0px;
 }
 
 .tt-banner-inner {
@@ -5468,7 +5468,7 @@ button {
     line-height: 45px;
     font-weight: 500;
     color: #272b2b;
-    font-family: Brush Script MT, cursive;
+    font-family: "Brush Script MT", cursive;
 }
 
 .tt-banner-img {
@@ -6080,9 +6080,12 @@ padding-right :15px;
  .youright p{
     padding: 0 0 18px 0;
     margin: 0;
-    font-size: 14px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 25px;    
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
  }   
  .Agency p{
     font-family: 'Courgette', cursive;
@@ -6111,7 +6114,7 @@ div.desktop-wrapper video {
     box-sizing: border-box;
     background: url(../img/banner_01.png) center center no-repeat;
     background-size: contain;
-    padding: 5% 3.9% 21%; /*0 4.6% 25%*/
+    padding: 2% 11% 16%; /*0 4.6% 25%*/
     position: absolute;
     top: 0;
     left: 0;
@@ -6152,7 +6155,19 @@ div.desktop-wrapper video {
     50% { border-color: orange }
   }
 
+.VideoRight{
+    margin-top: -13px;
+    right: -3%;
+}
+.VideoRight .desktop-wrapper{
+    width: 660px;
+    height: 500px;
 
+}
+@font-face {
+    font-family: Brush Script MT, cursive;
+    src: url(../fonts/brush_script_mt_kursiv.woff);
+}
 
 
 
@@ -6167,20 +6182,28 @@ div.desktop-wrapper video {
 
 
 @media (min-width: 767px) and (max-width: 1400px)  {
-
     div.desktop-wrapper video {       
-        padding: 3.1% 8.8% 17.6%; /*0 4.6% 25%*/
+        padding: 3.1% 10.8% 16.6%; /*0 4.6% 25%*/
     }
-
 }
-
+@media (max-width: 767px){
+.nav > li{
+float: initial;
+    }
+.tt-banner-info {
+        margin-top: 0;
+    }
+.VideoRight .desktop-wrapper{
+        width: 324px;
+        height: 281px;   
+    }
+    div.desktop-wrapper video {      
+        padding: 3% 8% 17%;
+    }
+}
 .tt-text.wow.fadeInUp {
 
     max-height: 80px;
     overflow: hidden;
 
-}
-@font-face {
-    font-family: Brush Script MT, cursive;
-    src: url(../fonts/brush_script_mt_kursiv.woff);
 }
