@@ -15,6 +15,7 @@ import Agencies from './Agencies';
 import You from './You';
 import Footer from './Footer';
 import Workforus from './Workforus';
+import CustomerVideo from './CustomerVideo';
 
 
 
@@ -43,8 +44,8 @@ class  App extends Component {
            <Route path="/customerstories1" component={CustomerStories1} />
            <Route path="/agencies" component={Agencies} />
            <Route path="/you" component={You} />
-           <Route path="/Workforus" component={Workforus} />
-
+           <Route path="/workforus" component={Workforus} />
+           <Route path="/customervideo" component={CustomerVideo} />
            
            <Footer />
         </div>
