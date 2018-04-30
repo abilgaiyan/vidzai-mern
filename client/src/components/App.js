@@ -10,6 +10,7 @@ import Aboutus from './Aboutus';
 import Contactus from './Contactus';
 import ContactusNew from './contactus/ContactusNew';
 import CustomerStories from './CustomerStories';
+import CustomerStories1 from './CustomerStories1';
 import Agencies from './Agencies';
 import You from './You';
 import Footer from './Footer';
@@ -39,6 +40,7 @@ class  App extends Component {
            <Route path="/contactus" component={Contactus} />
            <Route path="/contactus/new" component={ContactusNew} />
            <Route path="/customerstories" component={CustomerStories} />
+           <Route path="/customerstories1" component={CustomerStories1} />
            <Route path="/agencies" component={Agencies} />
            <Route path="/you" component={You} />
            <Route path="/Workforus" component={Workforus} />
