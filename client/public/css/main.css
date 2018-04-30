@@ -5464,11 +5464,11 @@ button {
 }
 
 .tt-banner-title {
-    font-size: 35px;
+    font-size: 45px;
     line-height: 45px;
     font-weight: 500;
     color: #272b2b;
-    font-family: 'Courgette', cursive;
+    font-family: Brush Script MT, cursive;
 }
 
 .tt-banner-img {
@@ -6179,4 +6179,8 @@ div.desktop-wrapper video {
     max-height: 80px;
     overflow: hidden;
 
+}
+@font-face {
+    font-family: Brush Script MT, cursive;
+    src: url(../fonts/brush_script_mt_kursiv.woff);
 }
