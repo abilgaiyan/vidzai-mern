@@ -68,7 +68,7 @@ class Header extends  Component {
                               </button>
   
                           </div>
-                          <div id="navbar" className="navbar-collapse collapse pull-right  wow fadeInRight" aria-expanded="false" style={{height: "1px"}}>
+                          <div id="navbar" className="navbar-collapse collapse col-xs-12 pull-right  wow fadeInRight" aria-expanded="false" style={{height: "1px"}}>
                               <ul className="nav navbar-nav">
                               <li key={8}><Link to="/">Home</Link></li>
                               <li key={4}><Link to="/you">You</Link></li>
