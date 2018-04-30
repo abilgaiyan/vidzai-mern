@@ -5468,7 +5468,7 @@ button {
     line-height: 45px;
     font-weight: 500;
     color: #272b2b;
-    font-family: Brush Script MT, cursive;
+    font-family: "Brush Script MT", cursive;
 }
 
 .tt-banner-img {
@@ -6080,9 +6080,12 @@ padding-right :15px;
  .youright p{
     padding: 0 0 18px 0;
     margin: 0;
-    font-size: 14px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 25px;    
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
  }   
  .Agency p{
     font-family: 'Courgette', cursive;
@@ -6151,10 +6154,15 @@ div.desktop-wrapper video {
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
-.VideoRight{
-margin-top:-25px;
-}
 
+.VideoRight{
+    margin-top: -13px;
+    right: -3%;
+}
+@font-face {
+    font-family: Brush Script MT, cursive;
+    src: url(../fonts/brush_script_mt_kursiv.woff);
+}
 
 
 
@@ -6181,8 +6189,4 @@ margin-top:-25px;
     max-height: 80px;
     overflow: hidden;
 
-}
-@font-face {
-    font-family: Brush Script MT, cursive;
-    src: url(../fonts/brush_script_mt_kursiv.woff);
 }
