@@ -5438,7 +5438,7 @@ button {
     position: relative;
     width: 100%;
     background: #fae6f6;
-    padding: 0 0 50px;
+    padding: 0 0 0px;
 }
 
 .tt-banner-inner {
@@ -6151,7 +6151,9 @@ div.desktop-wrapper video {
     from, to { border-color: transparent }
     50% { border-color: orange }
   }
-
+.VideoRight{
+margin-top:-25px;
+}
 
 
 

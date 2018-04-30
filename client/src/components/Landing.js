@@ -54,25 +54,19 @@ class  Landing extends Component {
                             </div>
                         </div>
                       
-						<div className="col-sm-6">
+						<div className="col-sm-6 VideoRight">
                     {/* <img className="tt-banner-img lazy" data-original="img/banner_01.png" alt="" src="img/banner_01.png" style={{display: "block"}} /> */}
                     {/* <p>WoW {this.videolist[this.state.counter].name} through a Visual & Personal Story </p> */}
 					      {vi  <= this.videolist.length - 1 ? this.playVideo(true) : this.playVideo(false) }
                
 				</div>
-        <div className="col-sm-12 text-center marginTop10 footerarrow">
+        <div className="col-sm-12 text-center  footerarrow">
         <p>Like what you see? Try it for yourself</p>
         <div className="arrow bounce marginTop20">
           <Link to="/you"> <i className="fa fa-angle-double-down fa-3x"></i></Link>
           </div>
           </div>
-
-     
-
-
-
-        
-                    </div>
+         </div>
 					
                 </div>
             </div>
