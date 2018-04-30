@@ -1,8 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-const CustomerStories = () => {
-    return (
+class CustomerStories  extends Component  {
+    // componentDidMount(){
+    //     console.log('componentDidMount' +  this.ifr.src);
+    //     this.ifr.onload = () => {
+    //     console.log('componentDidMount' +  this.ifr.src);
+    //     if(this.ifr){
+    //       this.ifr.src ="";   
+    //       this.ifr.contentWindow.postMessage('hello', "*");
+    //       this.ifr.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*')
+    //     }
+    //     }
+    //    }
+
+       componentDidMount() {
+        window.addEventListener("message", this.handleFrameTasks);
+        }
+
+        componentWillUnmount() {
+        window.removeEventListener("message", this.handleFrameTasks);
+        }
+
+        handleFrameTasks = (e) => {
+            console.log(e.data)
+            console.log(this.ifr.src);
+            if(this.ifr){
+                this.ifr.src ="";   
+                
+            //  if(e.data.from.iframe === "hello") {
+            //  this.ifr.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*')
+            //  }
+
+               this.ifr.src ="http://localhost:3000/api/videourl/Sukino.mp4";  
+               this.ifr.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*')
+               this.ifr.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+               this.ifr.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+            }
+        }
+
+    render(){
+         return (
         <div>
 
             <div className="container-fluid wow fadeInUp marginTop70 marginBottom40">
@@ -49,10 +87,10 @@ const CustomerStories = () => {
 
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="200ms">
                         <div className="tt-page">
-                            <Link to="/">
+                           
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Sukino.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong>A Home Care Story </strong></p>
@@ -64,15 +102,15 @@ const CustomerStories = () => {
                                     <div className="tt-page-title test-author">Sukino And You</div>
 
                                 </div>
-                            </Link>
+                           
                         </div>
                     </div>
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="400ms">
                         <div className="tt-page">
-                            <Link to="/">
+                           
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
 
                                     </div>
                                     <div className="tt-text wow fadeInUp">
@@ -85,15 +123,15 @@ const CustomerStories = () => {
                                     <div className="tt-page-title test-author">DPS</div>
 
                                 </div>
-                            </Link>
+                           
                         </div>
                     </div>
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="600ms">
                         <div className="tt-page">
-                            <Link to="/">
+                           
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Patient Story </strong></p>
@@ -105,15 +143,15 @@ const CustomerStories = () => {
                                     <div className="tt-page-title test-author">Smart Hospital </div>
 
                                 </div>
-                            </Link>
+                           
                         </div>
                     </div>
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="800ms">
                         <div className="tt-page">
-                            <Link to="/">
+                           
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Retail Buyer’s Story </strong></p>
@@ -125,15 +163,15 @@ const CustomerStories = () => {
                                     <div className="tt-page-title test-author">Retail</div>
 
                                 </div>
-                            </Link>
+                           
                         </div>
                     </div>
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
                         <div className="tt-page">
-                            <Link to="/">
+                           
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                        <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Recruitment Story </strong></p>
@@ -145,7 +183,7 @@ const CustomerStories = () => {
                                     <div className="tt-page-title test-author"> HR </div>
 
                                 </div>
-                            </Link>
+                           
                         </div>
                     </div>
                 </div>
@@ -161,6 +199,7 @@ const CustomerStories = () => {
 
 
     );
-};
+ };
+}
 
 export default CustomerStories;
