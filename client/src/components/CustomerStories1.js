@@ -1,6 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
 
+const renderhtml5video = (url) =>{
+    // const videourl =process.env.VIDEO_URL + url;
+    const videourl ='http://18.216.235.248:3000/api/videourl/' + url;
+    // console.log(videourl);
+     return (
+             <Video autoPlay={false} 
+                 controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+                 poster="http://sourceposter.jpg"
+                 onCanPlayThrough={() => {
+                     // Do stuff
+                 }}>
+                 <source src={videourl} type="video/webm" />
+                 {/* <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default /> */}
+             </Video>
+         );
+ }
 const CustomerStories1 = () => {
     return (
         <div>
@@ -30,7 +48,8 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Sukino.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                {/* <iframe className="resp-iframe" title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                {renderhtml5video("Sukino.mp4")}
                             </div>
                             <div className="tt-page-rating">
                                 <div className="tt-page-title test-author">A Home Care Story</div>
@@ -42,7 +61,8 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                {renderhtml5video("DPS_Akbar.mp4")}
 
                             </div>
                             <div className="tt-page-rating">
@@ -56,7 +76,8 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                {renderhtml5video("SmartHospital.mp4")}
 
                             </div>
                             <div className="tt-page-rating">
@@ -70,8 +91,8 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
-
+                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                {renderhtml5video("Retail.mp4")}
                             </div>
                             <div className="tt-page-rating">
                                 <div className="tt-page-title test-author">A Retail Buyer’s Story</div>
@@ -84,7 +105,8 @@ const CustomerStories1 = () => {
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                <iframe className="resp-iframe" src="http://18.216.235.248:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe>
+                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                {renderhtml5video("RecruitmentStory.mp4")}
 
                             </div>
                             <div className="tt-page-rating">
