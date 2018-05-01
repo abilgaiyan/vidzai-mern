@@ -9,7 +9,7 @@ const CustomerVideo = (props) => {
                            
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
-                                        <iframe className="resp-iframe"  src ={props.url} title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="true" width="100%" height="100%" frameBorder="0"></iframe>
+                                        {/* <iframe className="resp-iframe"  src ={props.url} title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="true" width="100%" height="100%" frameBorder="0"></iframe> */}
                                     </div>
                                     {/* <div className="tt-text wow fadeInUp">
                                         <p><strong>A Home Care Story </strong></p>
