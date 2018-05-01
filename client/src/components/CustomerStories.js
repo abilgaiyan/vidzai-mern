@@ -60,8 +60,8 @@ class CustomerStories  extends Component  {
                 <div className="row">
                     <div className="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                         <div className="tt-title">
-                            <div className="tt-title-count wow fadeInUp">Title</div>
-                            <h3 className="tt-title-name wow fadeInUp">small text</h3>
+                            {/* <div className="tt-title-count wow fadeInUp">Title</div>
+                            <h3 className="tt-title-name wow fadeInUp">small text</h3> */}
                             <div className="tt-title-text wow fadeInUp">Our clients are our best assets, the greatest pride! <br />Hear what our customers have to say.</div>
                         </div>
                     </div>
