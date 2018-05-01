@@ -9,7 +9,9 @@ class CustomerStories  extends Component  {
     
 
     renderhtml5video(url){
-        const videourl =process.env.VIDEO_URL + url;
+       // const videourl =process.env.VIDEO_URL + url;
+       const videourl ='http://18.216.235.248:3000/api/videourl/' + url;
+       // console.log(videourl);
         return (
                 <Video autoPlay={false} 
                     controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
