@@ -13,11 +13,11 @@ class Landing extends Component {
   }
 
   videolist = [
-    { id: 1, name: 'Clara', videourl: 'http://18.216.235.248:3000/api/videourl/clara.mp4' },
-    { id: 2, name: 'Jane', videourl: 'http://18.216.235.248:3000/api/videourl/Jane.mp4' },
-    { id: 3, name: 'Mary', videourl: 'http://18.216.235.248:3000/api/videourl/Mary.mp4' },
-    //{id: 4, name: 'clara2', videourl: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4'},
-    //{id: 5, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'},
+    { id: 1, name: 'Clara', videourl: 'http://18.216.235.248:3000/api/videourl/clara.mp4' , posterurl:'/poster/Picture1.png' },
+    { id: 2, name: 'Jane', videourl: 'http://18.216.235.248:3000/api/videourl/Jane.mp4' , posterurl:'/poster/Picture1.png' },
+    { id: 3, name: 'Mary', videourl: 'http://18.216.235.248:3000/api/videourl/Mary.mp4', posterurl:'/poster/Picture1.png' },
+    //{id: 4, name: 'clara2', videourl: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4', posterurl:'/poster/Picture1.png'},
+    //{id: 5, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U' , posterurl:'/poster/Picture1.png'},
   ]
 
 
@@ -30,7 +30,7 @@ class Landing extends Component {
   playVideo(playing) {
     const vi = this.state.counter > this.videolist.length - 1 ? this.videolist.length - 1 : this.state.counter;
     return (<ReactPlayer ref="reactplayerRef" className="desktop-wrapper pull-right" height={'100%'} width={'100%'} url={this.videolist[vi].videourl}
-      onEnded={() => this.renderNextVideo(this.state.counter + 1)} playing={playing} />
+      onEnded={() => this.renderNextVideo(this.state.counter + 1)} playing={playing} fileConfig={{ attributes: { poster: this.videolist[vi].posterurl } }} />
     );
   }
   renderVideo = () => {
