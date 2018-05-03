@@ -3,14 +3,14 @@ import React from 'react';
 import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
 
-const renderhtml5video = (url) =>{
+const renderhtml5video = (url,poster) =>{
     // const videourl =process.env.VIDEO_URL + url;
     const videourl ='http://18.216.235.248:3000/api/videourl/' + url;
     // console.log(videourl);
      return (
              <Video autoPlay={false} 
                  controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                 poster="http://sourceposter.jpg"
+                 poster={poster}
                  onCanPlayThrough={() => {
                      // Do stuff
                  }}>
@@ -49,7 +49,7 @@ const CustomerStories1 = () => {
 
                             <div className="resp-container">
                                 {/* <iframe className="resp-iframe" title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("Sukino.mp4")}
+                                {renderhtml5video("Sukino.mp4","/poster/Picture1.png")}
                             </div>
                             <div className="tt-page-rating">
                                 <div className="tt-page-title test-author">A Home Care Story</div>
@@ -62,7 +62,7 @@ const CustomerStories1 = () => {
 
                             <div className="resp-container">
                                 {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("DPS_Akbar.mp4")}
+                                {renderhtml5video("DPS_Akbar.mp4","/poster/Picture1.png")}
 
                             </div>
                             <div className="tt-page-rating">
@@ -77,7 +77,7 @@ const CustomerStories1 = () => {
 
                             <div className="resp-container">
                                 {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("SmartHospital.mp4")}
+                                {renderhtml5video("SmartHospital.mp4","/poster/Picture1.png")}
 
                             </div>
                             <div className="tt-page-rating">
@@ -92,7 +92,7 @@ const CustomerStories1 = () => {
 
                             <div className="resp-container">
                                 {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("Retail.mp4")}
+                                {renderhtml5video("Retail.mp4","/poster/Picture1.png")}
                             </div>
                             <div className="tt-page-rating">
                                 <div className="tt-page-title test-author">A Retail Buyer’s Story</div>
@@ -106,7 +106,7 @@ const CustomerStories1 = () => {
 
                             <div className="resp-container">
                                 {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("RecruitmentStory.mp4")}
+                                {renderhtml5video("RecruitmentStory.mp4","/poster/Picture1.png")}
 
                             </div>
                             <div className="tt-page-rating">
