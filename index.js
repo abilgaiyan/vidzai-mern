@@ -10,8 +10,8 @@ require('./models/Contactus');
 //require('./services/passport');
 //console.log(keys.mongodbURL)
 
-//mongoose.connect(keys.mongodbURL);
-mongoose.connect('mongodb://vidzai:vidzai@ds145178.mlab.com:45178/vidzai-dev');
+mongoose.connect(keys.mongodbURL);
+//mongoose.connect('mongodb://vidzai:vidzai@ds145178.mlab.com:45178/vidzai-dev');
 
 
 const app = express();
@@ -31,6 +31,7 @@ require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveyRoutes')(app);
 require('./routes/contactusRoutes')(app);
+require('./routes/mediaRoutes')(app);
 
 // For Production environment
 if (process.env.NODE_ENV ==='production'){
