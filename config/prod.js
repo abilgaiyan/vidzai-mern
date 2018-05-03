@@ -8,5 +8,6 @@ module.exports ={
     stripeSecretKey: process.env.STRIPE_SECRET_KEY,
     sendGridApiKey: process.env.SENDGRID_API_KEY,
     redirectDomain: process.env.REDIRECT_DOMAIN,
-    videourlpath: process.env.VIDEO_URL_PATH
+    videourlpath: process.env.VIDEO_URL_PATH,
+    posterurlpath: process.env.POSTER_URL_PATH
 }

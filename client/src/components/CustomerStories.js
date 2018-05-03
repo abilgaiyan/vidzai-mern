@@ -8,14 +8,14 @@ import 'react-html5video/dist/styles.css';
 class CustomerStories  extends Component  {
     
 
-    renderhtml5video(url){
+    renderhtml5video(url,poster){
        // const videourl =process.env.VIDEO_URL + url;
        const videourl ='http://18.216.235.248:3000/api/videourl/' + url;
        // console.log(videourl);
         return (
                 <Video autoPlay={false} 
                     controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                    poster="http://sourceposter.jpg"
+                    poster={poster}
                     onCanPlayThrough={() => {
                         // Do stuff
                     }}>
@@ -76,7 +76,7 @@ class CustomerStories  extends Component  {
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
                                         {/* <iframe className="resp-iframe" title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("Sukino.mp4")}
+                                        {this.renderhtml5video("Sukino.mp4","/poster/Picture1.png")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong>A Home Care Story </strong></p>
@@ -97,7 +97,7 @@ class CustomerStories  extends Component  {
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("DPS_Akbar.mp4")}
+                                        {this.renderhtml5video("DPS_Akbar.mp4","/poster/Picture1.png")}
 
                                     </div>
                                     <div className="tt-text wow fadeInUp">
@@ -119,7 +119,7 @@ class CustomerStories  extends Component  {
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("SmartHospital.mp4")}
+                                        {this.renderhtml5video("SmartHospital.mp4","/poster/Picture1.png")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Patient Story </strong></p>
@@ -140,7 +140,7 @@ class CustomerStories  extends Component  {
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("Retail.mp4")}
+                                        {this.renderhtml5video("Retail.mp4","/poster/Picture1.png")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Retail Buyer’s Story </strong></p>
@@ -161,7 +161,7 @@ class CustomerStories  extends Component  {
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("RecruitmentStory.mp4")}
+                                        {this.renderhtml5video("RecruitmentStory.mp4","/poster/Picture1.png")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Recruitment Story </strong></p>

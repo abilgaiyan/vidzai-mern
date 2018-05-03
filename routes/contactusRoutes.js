@@ -18,7 +18,9 @@ module.exports = app =>{
     //                 var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
     //                 // res.send(fullUrl);  
     // });
-        
+    
+    
+    
     app.get('/api/videourl/:videourl',  video_streamer.streamMovie); 
 
     app.post('/api/contactus',  async (req,res) =>{
