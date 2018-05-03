@@ -68,15 +68,15 @@ class CustomerStories  extends Component  {
                 </div>
             </div>
             <div className="container-fluid">
-                <div className="isotope-content">
-
+                     <div className="isotope-content">
+                         <div className="col-sm-12 flex">
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="200ms">
                         <div className="tt-page">
                            
                                 <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container">
+                                    <div className="resp-container1">
                                         {/* <iframe className="resp-iframe" title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("Sukino.mp4","/poster/Picture1.png")}
+                                        {this.renderhtml5video("Sukino.mp4","/poster/sukino.jpg")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong>A Home Care Story </strong></p>
@@ -95,9 +95,9 @@ class CustomerStories  extends Component  {
                         <div className="tt-page">
                            
                                 <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container">
+                                    <div className="resp-container1">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("DPS_Akbar.mp4","/poster/Picture1.png")}
+                                        {this.renderhtml5video("DPS_Akbar.mp4","/poster/DPS.jpg")}
 
                                     </div>
                                     <div className="tt-text wow fadeInUp">
@@ -113,13 +113,14 @@ class CustomerStories  extends Component  {
                            
                         </div>
                     </div>
+
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="600ms">
                         <div className="tt-page">
                            
                                 <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container">
+                                    <div className="resp-container1">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("SmartHospital.mp4","/poster/Picture1.png")}
+                                        {this.renderhtml5video("SmartHospital.mp4","/poster/hospital.jpg")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Patient Story </strong></p>
@@ -134,13 +135,15 @@ class CustomerStories  extends Component  {
                            
                         </div>
                     </div>
+                         </div>
+                         <div className="col-sm-12 flex">
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="800ms">
                         <div className="tt-page">
                            
                                 <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container">
+                                    <div className="resp-container1">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("Retail.mp4","/poster/Picture1.png")}
+                                        {this.renderhtml5video("Retail.mp4","/poster/story.jpg")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Retail Buyer’s Story </strong></p>
@@ -159,9 +162,9 @@ class CustomerStories  extends Component  {
                         <div className="tt-page">
                            
                                 <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container">
+                                    <div className="resp-container1">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("RecruitmentStory.mp4","/poster/Picture1.png")}
+                                        {this.renderhtml5video("RecruitmentStory.mp4","/poster/story1.jpg")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Recruitment Story </strong></p>
@@ -171,11 +174,10 @@ class CustomerStories  extends Component  {
                                 </div>
                                 <div className="tt-page-rating">
                                     <div className="tt-page-title test-author"> HR </div>
-
-                                </div>
-                           
+                                </div>                           
                         </div>
                     </div>
+                   </div>
                 </div>
             </div>
             <div className="col-sm-12 text-center marginTop10 marginBottom20 footerarrow">
