@@ -12,7 +12,7 @@ const You = () => {
                         <div className="col-sm-6">
                             <div className="tt-banner-info">
                                 <h5 className="tt-banner-label"> <p>Personal Video engages customers</p> </h5>
-                                <h1 className="tt-banner-title">Create an emotional experience for<br /> Customer  Her name, her data, her story</h1>
+                                <h1 className="tt-banner-title">Create an emotional experience for Customer <br /> Her name, her data, her story</h1>
                             </div>
                         </div>
                         {/* <div> Like what you see? Try it for yourself </div> */}
@@ -22,7 +22,7 @@ const You = () => {
            {/* <ReactPlayer className="bannervideo"  url= {this.videolist[this.state.counter].videourl}
               onEnded={() => this.renderNextVideo(this.state.counter + 1)}  playing /> */}
                 <Typist className="Typist  typewriter">
-                   <h5>Did you notice our Team Thanking <br/> customers  like CLARA in the video?</h5>
+                   <h6>Did you notice our Team Thanking <br/> customers  like CLARA in the video?</h6>
                    <br/>
                    <h6>Did you hear them calling out CLARA? </h6>
                    <br/>

@@ -85,7 +85,7 @@ class CustomerStories  extends Component  {
                                     </div>
                                 </div>
                                 <div className="tt-page-rating">
-                                    <div className="tt-page-title test-author">Sukino And You</div>
+                                    <div className="tt-page-title test-author">Sukino</div>
 
                                 </div>
                            
