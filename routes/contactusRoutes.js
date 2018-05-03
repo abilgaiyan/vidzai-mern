@@ -4,7 +4,7 @@ const { URL } = require('url');
 const mongoose = require('mongoose');
 const Contactus = mongoose.model('contactus');
 const contactusTemplate = require('../services/emailTemplate/contactusTemplate');
-const video_streamer = require('./video_streamer');
+//const video_streamer = require('./video_streamer');
 module.exports = app =>{
 
     app.get('/api/contactus', async (req, res) =>{
@@ -21,7 +21,7 @@ module.exports = app =>{
     
     
     
-    app.get('/api/videourl/:videourl',  video_streamer.streamMovie); 
+    // app.get('/api/videourl/:videourl',  video_streamer.streamMovie); 
 
     app.post('/api/contactus',  async (req,res) =>{
        // console.log(req.body);
