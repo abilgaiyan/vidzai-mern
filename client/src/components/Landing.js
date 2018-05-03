@@ -4,6 +4,10 @@ import React, { Component } from 'react';
 //import { Player } from 'video-react';
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
+import You from './You';
+import CustomerStories from './CustomerStories';
+import Agencies from './Agencies';
+import Workforus from './Workforus';
 
 class Landing extends Component {
 
@@ -66,15 +70,9 @@ class Landing extends Component {
                   <div className="arrow bounce marginTop20">
                     <Link to="/you"> <i className="fa fa-angle-double-down fa-3x"></i></Link>
                   </div>
+                  
                 </div>
-
-
-
-
-
-
               </div>
-
             </div>
           </div>
         </div>
@@ -95,6 +93,14 @@ class Landing extends Component {
         <div className='player-wrapper'>
           {this.renderVideo()}
         </div>
+        <You />
+
+        <CustomerStories />
+
+        <Agencies />
+
+        <Workforus />
+
       </div>
     );
   }

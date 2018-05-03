@@ -23,7 +23,7 @@ class Header extends  Component {
           <li key={4}><Link to="">You</Link></li>,
           <li key={5}><Link to="/customerstories">Customer Stories</Link></li>,
           <li key={6}><Link to="">Agencies</Link></li>,
-          <li key={7}><Link to="">Work for Us!</Link></li>,
+          <li key={7}><Link to="/workforus">Work for Us!</Link></li>,
           <li key={8}><Link to="/aboutus">About Us</Link></li>,
           <li key={9}><Link to="/contactus/new">Contact Us</Link></li>
           // <li><a href="/auth/google">Login With Google</a></li>
