@@ -5451,7 +5451,7 @@ button {
 }
 .tt-banner-info {
     margin-left: -50px;
-    margin-top: 260px;
+    margin-top: 180px;
 }
 
 .tt-banner-label p {
@@ -5535,6 +5535,7 @@ button {
         font-size: 40px;
         line-height: 44px;
     }
+    
 }
 
 
@@ -6180,6 +6181,13 @@ div.desktop-wrapper video {
     }
 }
 @media (max-width: 767px){
+    .typewriter {
+        top: 12%;
+    }
+    .tt-banner-label p {
+        padding-left: 32px;
+        padding-top: 11px;
+    }
 .nav > li{
 float: initial;
     }
