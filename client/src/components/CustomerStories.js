@@ -112,12 +112,12 @@ class CustomerStories  extends Component  {
                            
                         </div>
                     </div>
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
+                    {/* <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
                         <div className="tt-page">
                            
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container1">
-                                        {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                     
                                         {this.renderhtml5video("RecruitmentStory.mp4","/poster/RecruitmentStory.jpg")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
@@ -130,7 +130,7 @@ class CustomerStories  extends Component  {
                                     <div className="tt-page-title test-author"> HR </div>
                                 </div>                           
                         </div>
-                    </div>
+                    </div> */}
                          </div>
                          <div className="col-sm-12 flex">
 
@@ -185,7 +185,7 @@ class CustomerStories  extends Component  {
                 </div>
             </div>
             <div className="col-sm-12 text-center marginTop10 marginBottom20 footerarrow">
-                <p>Like what you see? Try it for yourself</p>
+                <p>Like what you see? Check these out and ask for one</p>
                 <div className="arrow bounce marginTop20">
                     <Link to="/customerstories1"> <i className="fa fa-angle-double-down fa-3x"></i></Link>
                 </div>

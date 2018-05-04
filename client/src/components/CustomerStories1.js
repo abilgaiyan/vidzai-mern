@@ -71,11 +71,11 @@ const CustomerStories1 = () => {
 
                         </div>
                     </div>
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
+                    {/* <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
                         <div className="tt-page">
 
                             <div className="resp-container">
-                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                               
                                 {renderhtml5video("RecruitmentStory.mp4","/poster/RecruitmentStory.jpg")}
 
                             </div>
@@ -85,7 +85,7 @@ const CustomerStories1 = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="400ms">
                         <div className="tt-page">
 
