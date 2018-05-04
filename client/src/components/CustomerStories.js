@@ -91,13 +91,57 @@ class CustomerStories  extends Component  {
                            
                         </div>
                     </div>
+                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="800ms">
+                        <div className="tt-page">
+                           
+                                <div className="tt-page-testimonial text-center">
+                                    <div className="resp-container1">
+                                        {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                        {this.renderhtml5video("Retail.mp4","/poster/Retail.jpg")}
+                                    </div>
+                                    <div className="tt-text wow fadeInUp">
+                                        <p><strong> A Retail Buyer’s Story </strong></p>
+                                        <p> A Japanese firm*, uses Vidzai to leverage its customer buying information and the loyalty points to provide an unbeatable offer for next purchase. Rich visuals including dynamic </p>
+
+                                    </div>
+                                </div>
+                                <div className="tt-page-rating">
+                                    <div className="tt-page-title test-author">Retail</div>
+
+                                </div>
+                           
+                        </div>
+                    </div>
+                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
+                        <div className="tt-page">
+                           
+                                <div className="tt-page-testimonial text-center">
+                                    <div className="resp-container1">
+                                        {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                        {this.renderhtml5video("RecruitmentStory.mp4","/poster/RecruitmentStory.jpg")}
+                                    </div>
+                                    <div className="tt-text wow fadeInUp">
+                                        <p><strong> A Recruitment Story </strong></p>
+                                        <p>A Japanese HR firm* specializing in Recruitment*, runs a AI engine that matches the demand with the candidate profiles. Vidzai could be used to distribute the recommendations to its customers (currently at a prototype stage)</p>
+
+                                    </div>
+                                </div>
+                                <div className="tt-page-rating">
+                                    <div className="tt-page-title test-author"> HR </div>
+                                </div>                           
+                        </div>
+                    </div>
+                         </div>
+                         <div className="col-sm-12 flex">
+
+
                     <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="400ms">
                         <div className="tt-page">
                            
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container1">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("DPS_Akbar.mp4","/poster/DPS.jpg")}
+                                        {this.renderhtml5video("DPS_Akbar.mp4","/poster/DPS_Akbar.jpg")}
 
                                     </div>
                                     <div className="tt-text wow fadeInUp">
@@ -120,7 +164,7 @@ class CustomerStories  extends Component  {
                                 <div className="tt-page-testimonial text-center">
                                     <div className="resp-container1">
                                         {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("SmartHospital.mp4","/poster/hospital.jpg")}
+                                        {this.renderhtml5video("SmartHospital.mp4","/poster/SmartHospital.jpg")}
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Patient Story </strong></p>
@@ -135,48 +179,8 @@ class CustomerStories  extends Component  {
                            
                         </div>
                     </div>
-                         </div>
-                         <div className="col-sm-12 flex">
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="800ms">
-                        <div className="tt-page">
-                           
-                                <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container1">
-                                        {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("Retail.mp4","/poster/story.jpg")}
-                                    </div>
-                                    <div className="tt-text wow fadeInUp">
-                                        <p><strong> A Retail Buyer’s Story </strong></p>
-                                        <p> A Japanese firm*, uses Vidzai to leverage its customer buying information and the loyalty points to provide an unbeatable offer for next purchase. Rich visuals including dynamic </p>
 
-                                    </div>
-                                </div>
-                                <div className="tt-page-rating">
-                                    <div className="tt-page-title test-author">Retail</div>
 
-                                </div>
-                           
-                        </div>
-                    </div>
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
-                        <div className="tt-page">
-                           
-                                <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container1">
-                                        {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/RecruitmentStory.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("RecruitmentStory.mp4","/poster/story1.jpg")}
-                                    </div>
-                                    <div className="tt-text wow fadeInUp">
-                                        <p><strong> A Recruitment Story </strong></p>
-                                        <p>A Japanese HR firm* specializing in Recruitment*, runs a AI engine that matches the demand with the candidate profiles. Vidzai could be used to distribute the recommendations to its customers (currently at a prototype stage)</p>
-
-                                    </div>
-                                </div>
-                                <div className="tt-page-rating">
-                                    <div className="tt-page-title test-author"> HR </div>
-                                </div>                           
-                        </div>
-                    </div>
                    </div>
                 </div>
             </div>
