@@ -6209,6 +6209,7 @@ float: initial;
     padding-right: 0;
     background: #fff;
     object-fit: fill;
+    min-height: 221px;
 }
 
 .resp-container1 video {

@@ -131,6 +131,27 @@ class CustomerStories  extends Component  {
                                 </div>                           
                         </div>
                     </div> */}
+                        <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="600ms">
+                        <div className="tt-page">
+                           
+                                <div className="tt-page-testimonial text-center">
+                                    <div className="resp-container1">
+                                        {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                                        {this.renderhtml5video("SmartHospital.mp4","/poster/SmartHospital.jpg")}
+                                    </div>
+                                    <div className="tt-text wow fadeInUp">
+                                        <p><strong> A Patient Story </strong></p>
+                                        <p>One of the Asia’s largest hospitals* – A front runner tech enabled institution, used Vidzai to generate Personalized video for their international patients to provide information on the medical process. Video aims to augment various stages of the customer journey for the hospital </p>
+
+                                    </div>
+                                </div>
+                                <div className="tt-page-rating">
+                                    <div className="tt-page-title test-author">Smart Hospital </div>
+
+                                </div>
+                           
+                        </div>
+                    </div>
                          </div>
                          <div className="col-sm-12 flex">
 
@@ -158,27 +179,7 @@ class CustomerStories  extends Component  {
                         </div>
                     </div>
 
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="600ms">
-                        <div className="tt-page">
-                           
-                                <div className="tt-page-testimonial text-center">
-                                    <div className="resp-container1">
-                                        {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                        {this.renderhtml5video("SmartHospital.mp4","/poster/SmartHospital.jpg")}
-                                    </div>
-                                    <div className="tt-text wow fadeInUp">
-                                        <p><strong> A Patient Story </strong></p>
-                                        <p>One of the Asia’s largest hospitals* – A front runner tech enabled institution, used Vidzai to generate Personalized video for their international patients to provide information on the medical process. Video aims to augment various stages of the customer journey for the hospital </p>
-
-                                    </div>
-                                </div>
-                                <div className="tt-page-rating">
-                                    <div className="tt-page-title test-author">Smart Hospital </div>
-
-                                </div>
-                           
-                        </div>
-                    </div>
+                
 
 
                    </div>
