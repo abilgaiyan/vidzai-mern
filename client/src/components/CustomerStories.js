@@ -101,7 +101,7 @@ class CustomerStories  extends Component  {
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Retail Buyer’s Story </strong></p>
-                                        <p> A Japanese firm*, uses Vidzai to leverage its customer buying information and the loyalty points to provide an unbeatable offer for next purchase. Rich visuals including dynamic </p>
+                                        <p> A Japanese firm*, uses Vidzai to leverage its customer buying information and the loyalty points to provide an unbeatable offer for next purchase. Rich visuals including dynamic images seals the deal. </p>
 
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@ class CustomerStories  extends Component  {
                                     </div>
                                     <div className="tt-text wow fadeInUp">
                                         <p><strong> A Patient Story </strong></p>
-                                        <p>One of the Asia’s largest hospitals* – A front runner tech enabled institution, used Vidzai to generate Personalized video for their international patients to provide information on the medical process. Video aims to augment various stages of the customer journey for the hospital </p>
+                                        <p>One of the Asia’s largest hospitals* – A front runner tech enabled institution, used Vidzai to generate Personalized video for their international patients to provide information on the medical process. Video aims to augment various stages of the customer journey for the hospital.</p>
 
                                     </div>
                                 </div>

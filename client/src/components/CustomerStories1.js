@@ -42,83 +42,123 @@ const CustomerStories1 = () => {
                 </div>
             </div>
             <div className="container-fluid">
-                <div className="isotope-content">
-                <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="200ms">
-                        <div className="tt-page">
+            <div className="isotope-content">
+                <div className="col-sm-12 flex">
+           <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="200ms">
+               <div className="tt-page">
+                  
+                       <div className="tt-page-testimonial text-center">
+                           <div className="resp-container1">
+                               {/* <iframe className="resp-iframe" title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => ifr = f } src="" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                               {renderhtml5video("Sukino.mp4","/poster/sukino.jpg")}
+                           </div>
+                           <div className="tt-text wow fadeInUp">
+                               <p><strong>A Home Care Story </strong></p>
+                               <p>Sukino – a Wellness service provider, used a personalized video to explain the Homecare services to its customers. Video stitches the dynamic customer and nurse information along with the information on Services</p>
 
-                            <div className="resp-container">
-                                {/* <iframe className="resp-iframe" title="Sukino" autoPlay="false" sandbox="allow-same-origin allow-scripts" ref={(f) => this.ifr = f } src="" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("Sukino.mp4","/poster/sukino.jpg")}
-                            </div>
-                            <div className="tt-page-rating">
-                                <div className="tt-page-title test-author">A Home Care Story</div>
-                            </div>
+                           </div>
+                       </div>
+                       <div className="tt-page-rating">
+                           <div className="tt-page-title test-author">Sukino</div>
 
-                        </div>
-                    </div>
+                       </div>
+                  
+               </div>
+           </div>
+           <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="800ms">
+               <div className="tt-page">
+                  
+                       <div className="tt-page-testimonial text-center">
+                           <div className="resp-container1">
+                               {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/Retail.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                               {renderhtml5video("Retail.mp4","/poster/Retail.jpg")}
+                           </div>
+                           <div className="tt-text wow fadeInUp">
+                               <p><strong> A Retail Buyer’s Story </strong></p>
+                               <p> A Japanese firm*, uses Vidzai to leverage its customer buying information and the loyalty points to provide an unbeatable offer for next purchase. Rich visuals including dynamic images seals the deal. </p>
 
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="800ms">
-                        <div className="tt-page">
+                           </div>
+                       </div>
+                       <div className="tt-page-rating">
+                           <div className="tt-page-title test-author">Retail</div>
 
-                            <div className="resp-container">
-                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("Retail.mp4","/poster/Retail.jpg")}
-                            </div>
-                            <div className="tt-page-rating">
-                                <div className="tt-page-title test-author">A Retail Buyer’s Story</div>
+                       </div>
+                  
+               </div>
+           </div>
+           {/* <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
+               <div className="tt-page">
+                  
+                       <div className="tt-page-testimonial text-center">
+                           <div className="resp-container1">
+                            
+                               {renderhtml5video("RecruitmentStory.mp4","/poster/RecruitmentStory.jpg")}
+                           </div>
+                           <div className="tt-text wow fadeInUp">
+                               <p><strong> A Recruitment Story </strong></p>
+                               <p>A Japanese HR firm* specializing in Recruitment*, runs a AI engine that matches the demand with the candidate profiles. Vidzai could be used to distribute the recommendations to its customers (currently at a prototype stage)</p>
 
-                            </div>
+                           </div>
+                       </div>
+                       <div className="tt-page-rating">
+                           <div className="tt-page-title test-author"> HR </div>
+                       </div>                           
+               </div>
+           </div> */}
+               <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="600ms">
+               <div className="tt-page">
+                  
+                       <div className="tt-page-testimonial text-center">
+                           <div className="resp-container1">
+                               {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                               {renderhtml5video("SmartHospital.mp4","/poster/SmartHospital.jpg")}
+                           </div>
+                           <div className="tt-text wow fadeInUp">
+                               <p><strong> A Patient Story </strong></p>
+                               <p>One of the Asia’s largest hospitals* – A front runner tech enabled institution, used Vidzai to generate Personalized video for their international patients to provide information on the medical process. Video aims to augment various stages of the customer journey for the hospital.</p>
 
-                        </div>
-                    </div>
-                    {/* <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="1000ms">
-                        <div className="tt-page">
+                           </div>
+                       </div>
+                       <div className="tt-page-rating">
+                           <div className="tt-page-title test-author">Smart Hospital </div>
 
-                            <div className="resp-container">
-                               
-                                {renderhtml5video("RecruitmentStory.mp4","/poster/RecruitmentStory.jpg")}
-
-                            </div>
-                            <div className="tt-page-rating">
-                                <div className="tt-page-title test-author">A Recruitment Story</div>
-
-                            </div>
-
-                        </div>
-                    </div> */}
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="400ms">
-                        <div className="tt-page">
-
-                            <div className="resp-container">
-                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("DPS_Akbar.mp4","/poster/DPS_Akbar.jpg")}
-
-                            </div>
-                            <div className="tt-page-rating">
-                                <div className="tt-page-title test-author">An Event Invitation Story</div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="600ms">
-                        <div className="tt-page">
-
-                            <div className="resp-container">
-                                {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/SmartHospital.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
-                                {renderhtml5video("SmartHospital.mp4","/poster/SmartHospital.jpg")}
-
-                            </div>
-                            <div className="tt-page-rating">
-                                <div className="tt-page-title test-author">A Patient Story</div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
+                       </div>
+                  
+               </div>
+           </div>
                 </div>
-            </div>
+                <div className="col-sm-12 flex">
+
+
+           <div className="isotope-item col-xs-6 col-sm-4 wow fadeInUp" data-wow-delay="400ms">
+               <div className="tt-page">
+                  
+                       <div className="tt-page-testimonial text-center">
+                           <div className="resp-container1">
+                               {/* <iframe className="resp-iframe" src="http://localhost:3000/api/videourl/DPS_Akbar.mp4" allow="encrypted-media" allowFullScreen="" width="100%" height="100%" frameBorder="0"></iframe> */}
+                               {renderhtml5video("DPS_Akbar.mp4","/poster/DPS_Akbar.jpg")}
+
+                           </div>
+                           <div className="tt-text wow fadeInUp">
+                               <p><strong> An Event Invitation Story </strong></p>
+                               <p>Delhi Public School used the Vidzai to generate Personalized video invitations for its Annual Day function. Personalization through Parent’s names coupled with the rich visuals created an engaging experience</p>
+
+                           </div>
+                       </div>
+                       <div className="tt-page-rating">
+                           <div className="tt-page-title test-author">DPS</div>
+
+                       </div>
+                  
+               </div>
+           </div>
+
+       
+
+
+          </div>
+       </div>
+   </div>
         </div>
     );
 };
