@@ -13,7 +13,7 @@ const You = () => {
                             <div className="tt-banner-info">
                                 <h5 className="tt-banner-label"> <p>Personal Video engages customers</p> </h5>
                                 <h1 className="tt-banner-title hidden-xs">Create an emotional experience for Customer. <br /> Her name, her data, her story</h1>
-                                <h1 className="tt-banner-title visible-xs hidden-sm hidden-md hidden-lg">Create an emotional experience for Customer Her name, her data, her story</h1>
+                                <h1 className="tt-banner-title visible-xs hidden-sm hidden-md hidden-lg">Create an emotional experience for Customer Her name, her data, her story.</h1>
                             </div>
                         </div>
                         {/* <div> Like what you see? Try it for yourself </div> */}
