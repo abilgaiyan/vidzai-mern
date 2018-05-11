@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FETCH_USER, FETCH_SURVEYS, FETCH_CONTACTUS } from './types';
+import { FETCH_USER, FETCH_SURVEYS, FETCH_CONTACTUS, FETCH_STORIES } from './types';
 
 export const fetchUser = () => async dispatch => {
   const res = await axios.get('/api/current_user');
@@ -37,4 +37,12 @@ export const fetchContactus = () => async dispatch => {
   const res = await axios.get('/api/contactus');
 
   dispatch({ type: FETCH_CONTACTUS, payload: res.data });
+};
+
+
+export const fetchStories = () => async dispatch => {
+  const res = await axios.get('/api/customerstories');
+
+  //const res = storylist;
+  dispatch({ type: FETCH_STORIES, payload: res.data });
 };

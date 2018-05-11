@@ -7,6 +7,7 @@ const cookieSession = require('cookie-session');
 require('./models/User');
 require('./models/Survey');
 require('./models/Contactus');
+require('./models/CustomerStory');
 //require('./services/passport');
 //console.log(keys.mongodbURL)
 
@@ -32,6 +33,7 @@ require('./routes/billingRoutes')(app);
 require('./routes/surveyRoutes')(app);
 require('./routes/contactusRoutes')(app);
 require('./routes/mediaRoutes')(app);
+require('./routes/customerStoryRoutes')(app);
 
 // For Production environment
 if (process.env.NODE_ENV ==='production'){
