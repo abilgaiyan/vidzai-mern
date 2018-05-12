@@ -64,7 +64,7 @@ module.exports = app =>{
         //{id: 5, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U' , posterurl:'/poster/Picture1.png'},
       ]
          
-       res.send(customerstories);  
+       res.send(customerstories.filter(x=> x.published === '1'));  
     });
 
 
