@@ -16,10 +16,11 @@ class Landing extends Component {
     this.state = { counter: 0, playing: true };
   }
 
+  // http://18.216.235.248:3000/api/videourl/clara.mp4
   videolist = [
-    { id: 1, name: 'Clara', videourl: 'http://18.216.235.248:3000/api/videourl/clara.mp4' , posterurl:'/poster/Picture1.png' },
-    { id: 2, name: 'Jane', videourl: 'http://18.216.235.248:3000/api/videourl/Jane.mp4' , posterurl:'/poster/Picture1.png' },
-    { id: 3, name: 'Mary', videourl: 'http://18.216.235.248:3000/api/videourl/Mary.mp4', posterurl:'/poster/Picture1.png' },
+    { id: 1, name: 'Clara', videourl: 'http://localhost:3000/api/videourl/clara.mp4' , posterurl:'/poster/Picture1.png' },
+    { id: 2, name: 'Jane', videourl: 'http://localhost:3000/api/videourl/Jane.mp4' , posterurl:'/poster/Picture1.png' },
+    { id: 3, name: 'Mary', videourl: 'http://localhost:3000/api/videourl/Mary.mp4', posterurl:'/poster/Picture1.png' },
     //{id: 4, name: 'clara2', videourl: 'https://media.w3.org/2010/05/sintel/trailer_hd.mp4', posterurl:'/poster/Picture1.png'},
     //{id: 5, name: 'clara3', videourl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U' , posterurl:'/poster/Picture1.png'},
   ]

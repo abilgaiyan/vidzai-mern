@@ -20,7 +20,8 @@ class RenderCustomerStories  extends Component  {
 renderhtml5video(url,poster){
    
    // const videourl =process.env.VIDEO_URL + url;
-   const videourl ='http://18.216.235.248:3000/api/videourl/' + url;
+   // const videourl ='http://18.216.235.248:3000/api/videourl/' + url;
+   const videourl ='http://localhost:3000/api/videourl/' + url;
    // console.log(videourl);
     return (
             <Video autoPlay={false} 
